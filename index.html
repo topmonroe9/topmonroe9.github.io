@@ -13,7 +13,12 @@
           <div class="profile">
             <div class="profile-info">
               <h1 id="name">Семенченко Егор</h1>
-              <div class="subtitle" id="personal-info">25 лет</div>
+              <div class="subtitle" id="personal-info">
+                25 лет -
+                <a href="https://github.com/topmonroe9" target="_blank"
+                  >github.com/topmonroe9</a
+                >
+              </div>
               <div class="contact-info">
                 <div class="contact-item">
                   <svg
@@ -84,13 +89,13 @@
               <div class="contact-info">
                 <div class="contact-item" id="location">Проживание: Москва</div>
                 <div class="contact-item" id="citizenship">
-                  Гражданство: Россия, разрешение на работу: Россия
+                  Гражданство: Россия
                 </div>
               </div>
             </div>
           </div>
           <div class="action-buttons">
-            <button class="download-btn" id="download-pdf">
+            <a href="Егор Семенченко NodeJS.pdf" class="download-btn" download>
               <svg
                 class="download-icon"
                 viewBox="0 0 24 24"
@@ -105,6 +110,21 @@
                 <path d="M12 3V3C7.029 3 3 7.029 3 12V12" />
               </svg>
               <span id="download-text">Скачать PDF</span>
+            </a>
+            <button class="print-btn" id="print-pdf">
+              <svg
+                class="print-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M6 8V2H18V8" />
+                <path d="M6 22H18V16H6V22Z" />
+                <path
+                  d="M18 14H20V8C20 7.44772 19.5523 7 19 7H5C4.44772 7 4 7.44772 4 8V14H6"
+                />
+                <circle cx="8" cy="11" r="1" />
+              </svg>
+              <span id="print-text">Печать</span>
             </button>
           </div>
         </div>
@@ -141,7 +161,7 @@
 
           <div class="work-item">
             <div class="work-header">
-              <div class="work-title" id="job1-title">Full Stack Developer</div>
+              <div class="work-title" id="job1-title">Full Stack Engineer</div>
               <div class="work-date" id="job1-date">
                 Март 2024 — настоящее время (1 год 1 месяц)
               </div>
@@ -191,29 +211,22 @@
               </div>
             </div>
             <div class="work-company" id="job3-company">Anoda</div>
-            <div class="work-link">
-              <a href="http://www.anoda.mobi/" target="_blank"
-                >www.anoda.mobi/</a
-              >
-            </div>
-            <div class="work-description" id="job3-description">
-              Разработка бэкенда. Интеграция с платежами и подписками через
-              Stripe, автоматизация Jira, менторинг джуниоров.
-            </div>
+            <!-- <div class="work-link">
+              <a target="_blank">www.anoda.mobi/</a>
+            </div> -->
             <div class="tech-stack" id="job3-stack">
               Стек: AWS, nestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.
             </div>
             <div class="projects" id="job3-projects">
+              Разработка бэкенда. Интеграция с платежами и подписками через
+              Stripe, автоматизация Jira, менторинг джуниоров.<br />
               Проекты моей команды с нуля:<br />
-              <a href="https://www.augmento.com/" target="_blank"
-                >https://www.augmento.com/</a
+              <a href="https://www.augmento.com/" target="_blank">Augmento</a
               ><br />
               <a href="https://www.usekyleapp.com/" target="_blank"
-                >https://www.usekyleapp.com/</a
+                >UseKyleApp</a
               ><br />
-              <a href="https://www.caregave.com/" target="_blank"
-                >https://www.caregave.com/</a
-              >
+              <a href="https://www.caregave.com/" target="_blank">CareGave</a>
             </div>
           </div>
 
@@ -303,7 +316,6 @@
             <div class="skill-tag">Socket.io</div>
             <div class="skill-tag">REST API</div>
             <div class="skill-tag">TypeScript</div>
-            <div class="skill-tag">Backend</div>
             <div class="skill-tag">NestJS</div>
             <div class="skill-tag">Redis</div>
             <div class="skill-tag">Linux</div>
@@ -334,154 +346,6 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <div class="container">
-        <div id="update-date">Резюме обновлено 5 февраля 2025 в 18:24</div>
-      </div>
-    </footer>
-
-    <!-- English content (hidden by default) -->
-    <div id="en-content" class="hidden">
-      <!-- Name -->
-      <span data-id="name">Semenchenko Egor</span>
-      <span data-id="personal-info">Male, 25 years</span>
-      <span data-id="location">Reside in: Moscow</span>
-      <span data-id="citizenship"
-        >Citizenship: Russia, work permit at: Russia</span
-      >
-      <span data-id="download-text">Download PDF</span>
-
-      <!-- Position -->
-      <span data-id="desired-position">Software Developer</span>
-      <span data-id="position-specs">
-        Specialization: Programmer, developer<br />
-        Employment: full time<br />
-        Work schedule: full day, remote working
-      </span>
-      <span data-id="salary">200,000 ₽</span>
-
-      <!-- Experience -->
-      <span data-id="experience-title">Work experience — 4 years 3 months</span>
-
-      <span data-id="job1-title">Full Stack Developer</span>
-      <span data-id="job1-date">March 2024 — till now (1 year 1 month)</span>
-      <span data-id="job1-company"
-        >Individual entrepreneurship / private practice / freelance</span
-      >
-      <span data-id="job1-description"
-        >CRMs development. Accounting system for payment platform. Excel and GS
-        scripting, formulas and automations.</span
-      >
-
-      <span data-id="job2-title">Head of Production</span>
-      <span data-id="job2-date">January 2024 — till now (1 year 3 months)</span>
-      <span data-id="job2-company">Planeta Sirius</span>
-      <span data-id="job2-location">Moscow</span>
-      <span data-id="job2-industry">
-        FMCG (non-edible)<br />
-        • Clothing, Footwear, Accessories, Textiles (Promotion, Wholesale)<br />
-        • Clothing, Footwear, Accessories, Textiles (Manufacturing)
-      </span>
-      <span data-id="job2-description"
-        >Managing production processes, coordinating team activities, and
-        overseeing quality and deadline compliance. Responsible for resource
-        optimization, performance analysis, and developing improvement plans.
-        Implementing automation and IT technologies to enhance production
-        efficiency. Collaborating with other departments and suppliers to ensure
-        seamless operations. Preparing reports on performance and proposing
-        solutions for development.</span
-      >
-
-      <span data-id="job3-title">Backend Engineer, Team Lead</span>
-      <span data-id="job3-date">January 2021 — December 2022 (2 years)</span>
-      <span data-id="job3-company">Anoda</span>
-      <span data-id="job3-description"
-        >Backend development. integrating with payments and subscriptions via
-        stripe, Jira Automations, Juniors mentoring.</span
-      >
-      <span data-id="job3-stack"
-        >Stack: AWS, nestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.</span
-      >
-      <span data-id="job3-projects">
-        Projects of my team made from scratch:<br />
-        <a href="https://www.augmento.com/" target="_blank"
-          >https://www.augmento.com/</a
-        ><br />
-        <a href="https://www.usekyleapp.com/" target="_blank"
-          >https://www.usekyleapp.com/</a
-        ><br />
-        <a href="https://www.caregave.com/" target="_blank"
-          >https://www.caregave.com/</a
-        >
-      </span>
-
-      <span data-id="job4-title">BackEnd Engineer</span>
-      <span data-id="job4-date">June 2021 — December 2021 (7 months)</span>
-      <span data-id="job4-company">InterLogistics</span>
-      <span data-id="job4-description"
-        >Automation scripts, parsing websites, parsing HTML, parsing WebSockets,
-        imitating user actions, Puppeteer. Big data aggregation.</span
-      >
-
-      <span data-id="job5-title">FullStack Engineer</span>
-      <span data-id="job5-date"
-        >January 2020 — June 2021 (1 year 6 months)</span
-      >
-      <span data-id="job5-company">MK 3</span>
-      <span data-id="job5-location">Moscow, mk3.ru</span>
-      <span data-id="job5-industry">
-        Construction, Real Estate, Architecture<br />
-        • Commercial Property Construction (Retail Spaces, Office Buildings)<br />
-        • Architecture, Design
-      </span>
-      <span data-id="job5-description"
-        >C# scripts and automations for ADOBE AutoCad And Revit. Company website
-        development, internal CRM system development for managing and licensing
-        plugins mentioned above.</span
-      >
-
-      <!-- Education -->
-      <span data-id="education-title">Education</span>
-      <span data-id="education-level">Higher</span>
-      <span data-id="university-name"
-        >Moscow University of Finance and Industry "Synergy", Moscow</span
-      >
-      <span data-id="education-spec"
-        >Information Security, Development and support of security systems</span
-      >
-
-      <!-- Skills -->
-      <span data-id="skills-title">Skills</span>
-      <span data-id="lang1">Russian</span>
-      <span data-id="lang1-level">Native</span>
-      <span data-id="lang2">English</span>
-      <span data-id="lang2-level">C1 — Advanced</span>
-
-      <!-- About -->
-      <span data-id="about-title">About me</span>
-      <span data-id="about-me">
-        My main stack is Node.js, AWS, NestJS, MongoDB/PostgreSQL, React with
-        TypeScript. At work, I actively use Docker, RabbitMQ, Redis, and
-        WebSockets. I have experience integrating with payment systems (Stripe),
-        writing automated scripts (Jira Automations, Puppeteer), and optimizing
-        backends for high-load services.<br /><br />
-
-        For three years, I worked in an IT team as a developer, and for the last
-        year, I've been managing a production process to gain management
-        experience. In parallel, I continue to fulfill private development
-        orders.<br /><br />
-
-        I always strive for results and take responsibility for the processes in
-        which I participate. It is important that everyone on the team is
-        involved and works toward common success. I am confident that any task
-        has solutions – it's just a matter of finding the right approach. I love
-        figuring out complex things and bringing them to logical completion.
-      </span>
-
-      <!-- Footer -->
-      <span data-id="update-date">Resume updated 5 February 2025 at 18:24</span>
-    </div>
 
     <script src="script.js"></script>
   </body>

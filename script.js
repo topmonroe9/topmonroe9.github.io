@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Add event listener to download button
-  const downloadBtn = document.getElementById("download-pdf");
-  if (downloadBtn) {
-    downloadBtn.addEventListener("click", function () {
+  // Add event listener to print button
+  const printBtn = document.getElementById("print-pdf");
+  if (printBtn) {
+    printBtn.addEventListener("click", function () {
       window.print();
     });
   }

@@ -13,7 +13,12 @@
           <div class="profile">
             <div class="profile-info">
               <h1 id="name">Semenchenko Egor</h1>
-              <div class="subtitle" id="personal-info">25 years</div>
+              <div class="subtitle" id="personal-info">
+                25 years -
+                <a href="https://github.com/topmonroe9" target="_blank"
+                  >github.com/topmonroe9</a
+                >
+              </div>
               <div class="contact-info">
                 <div class="contact-item">
                   <svg
@@ -84,14 +89,14 @@
               <div class="contact-info">
                 <div class="contact-item" id="location">Reside in: Moscow</div>
                 <div class="contact-item" id="citizenship">
-                  Citizenship: Russia, work permit at: Russia
+                  Citizenship: Russia
                 </div>
               </div>
             </div>
           </div>
           <div class="action-buttons">
-            <button class="download-btn" id="download-pdf">
-              <svg
+            <a href="Egor Semenchenko NodeJS.pdf" class="download-btn" download>
+              <!-- <svg
                 class="download-icon"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,8 +108,23 @@
                 />
                 <path d="M12 3V3C16.971 3 21 7.029 21 12V12" />
                 <path d="M12 3V3C7.029 3 3 7.029 3 12V12" />
-              </svg>
+              </svg> -->
               <span id="download-text">Download PDF</span>
+            </a>
+            <button class="print-btn" id="print-pdf1">
+              <svg
+                class="print-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M6 8V2H18V8" />
+                <path d="M6 22H18V16H6V22Z" />
+                <path
+                  d="M18 14H20V8C20 7.44772 19.5523 7 19 7H5C4.44772 7 4 7.44772 4 8V14H6"
+                />
+                <circle cx="8" cy="11" r="1" />
+              </svg>
+              <span id="print-text">Print</span>
             </button>
           </div>
         </div>
@@ -120,7 +140,7 @@
         <div class="position-details">
           <div>
             <div class="position-title" id="desired-position">
-              Node.JS Software Developer
+              Node.JS Software Engineer
             </div>
             <div class="position-specs" id="position-specs">
               Specialization: Programmer, developer<br />
@@ -141,7 +161,7 @@
 
           <div class="work-item">
             <div class="work-header">
-              <div class="work-title" id="job1-title">Full Stack Developer</div>
+              <div class="work-title" id="job1-title">Full Stack Engineer</div>
               <div class="work-date" id="job1-date">
                 March 2024 — till now (1 year 1 month)
               </div>
@@ -163,12 +183,9 @@
               </div>
             </div>
             <div class="work-company" id="job2-company">Planeta Sirius</div>
-            <div class="work-location" id="job2-location">Moscow</div>
             <div class="work-industry" id="job2-industry">
-              FMCG (non-edible)<br />
-              • Clothing, Footwear, Accessories, Textiles (Promotion,
-              Wholesale)<br />
-              • Clothing, Footwear, Accessories, Textiles (Manufacturing)
+              FMCG (non-edible) — Clothing, Footwear, Accessories, Textiles
+              (Manufacturing)
             </div>
             <div class="work-description" id="job2-description">
               Managing production processes, coordinating team activities, and
@@ -191,19 +208,12 @@
               </div>
             </div>
             <div class="work-company" id="job3-company">Anoda</div>
-            <div class="work-link">
-              <a href="http://www.anoda.mobi/" target="_blank"
-                >www.anoda.mobi/</a
-              >
-            </div>
-            <div class="work-description" id="job3-description">
-              Backend development. integrating with payments and subscriptions
-              via stripe, Jira Automations, Juniors mentoring.
-            </div>
             <div class="tech-stack" id="job3-stack">
               Stack: AWS, nestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.
             </div>
             <div class="projects" id="job3-projects">
+              Backend development. integrating with payments and subscriptions
+              via stripe, Jira Automations, Juniors mentoring.<br />
               Projects of my team made from scratch:<br />
               <a href="https://www.augmento.com/" target="_blank"
                 >https://www.augmento.com/</a
@@ -242,10 +252,8 @@
             <div class="work-company" id="job5-company">MK 3</div>
             <div class="work-location" id="job5-location">Moscow, mk3.ru</div>
             <div class="work-industry" id="job5-industry">
-              Construction, Real Estate, Architecture<br />
-              • Commercial Property Construction (Retail Spaces, Office
-              Buildings)<br />
-              • Architecture, Design
+              Construction, Real Estate, Architecture — Commercial Property
+              Construction (Retail Spaces, Office Buildings)<br />
             </div>
             <div class="work-description" id="job5-description">
               C# scripts and automations for ADOBE AutoCad And Revit. Company
@@ -334,12 +342,6 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <div class="container">
-        <div id="update-date">Resume updated 5 February 2025 at 18:24</div>
-      </div>
-    </footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

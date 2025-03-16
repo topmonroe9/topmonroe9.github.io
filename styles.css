@@ -1,3 +1,128 @@
+/* Анимации для секций при наведении */
+main .section {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+
+main .section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(52, 152, 219, 0.05) 0%,
+    rgba(52, 152, 219, 0.01) 100%
+  );
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+  transition: all 0.3s ease-in-out;
+}
+
+main .section:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main .section:hover .section-title {
+  color: var(--secondary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анимации для элементов опыта */
+.work-item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.work-item:hover {
+  background-color: rgba(52, 152, 219, 0.03);
+  transform: translateX(3px);
+  box-shadow: -3px 0 0 var(--secondary-color);
+}
+
+.work-item:hover .work-title {
+  color: var(--secondary-color);
+}
+
+/* Анимации для тегов навыков */
+.skill-tag {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-tag:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in-out;
+}
+
+.skill-tag:hover::after {
+  transform: translateX(100%);
+}
+
+/* Анимации для About Me секции */
+.about-me {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(52, 152, 219, 0.1) 0%,
+    rgba(52, 152, 219, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.about-me:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.about-me:hover::before {
+  opacity: 1;
+}
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -92,6 +217,35 @@ h1 {
   font-size: 1.2rem;
   color: var(--light-color);
   margin-bottom: 1rem;
+}
+
+.subtitle a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  position: relative;
+}
+
+.subtitle a:hover {
+  color: var(--light-color);
+}
+
+.subtitle a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.subtitle a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .contact-info {
@@ -330,28 +484,216 @@ footer {
   margin-top: 1rem;
 }
 
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  background-color: var(--secondary-color);
+}
+
+.print-btn:hover {
+  background-color: #2980b9;
+}
+
 @media print {
+  /* Основные настройки страницы */
+  @page {
+    margin: 0;
+    size: A4 portrait;
+  }
+
+  /* Общие настройки */
+  html,
+  body {
+    background-color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    line-height: 1.3 !important;
+    font-size: 12pt !important;
+  }
+
+  /* Скрываем элементы, не нужные при печати */
   .language-switch,
   .download-btn,
   .action-buttons {
     display: none !important;
   }
 
-  body {
-    background-color: white;
-  }
-
+  /* Контейнеры */
   .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1cm !important;
+    margin: 0 !important;
   }
 
-  header,
-  .desired-position,
-  main,
+  /* Заголовок */
+  header {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    padding: 1cm 0 0.5cm !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Имя и заголовок */
+  h1 {
+    color: white !important;
+    font-size: 16pt !important;
+    margin-bottom: 5pt !important;
+  }
+
+  .subtitle {
+    color: var(--light-color) !important;
+    font-size: 12pt !important;
+    margin-bottom: 5pt !important;
+  }
+
+  .subtitle a {
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Контактная информация */
+  .contact-info {
+    margin-top: 5pt !important;
+    gap: 5pt !important;
+  }
+
+  .contact-item {
+    color: var(--light-color) !important;
+  }
+
+  .contact-item a {
+    color: var(--light-color) !important;
+    text-decoration: none !important;
+  }
+
+  /* Секция должности */
+  .desired-position {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    padding: 0.5cm 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Основной контент */
+  main {
+    padding: 0.5cm 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Заголовки секций */
+  .section-title {
+    font-size: 14pt !important;
+    color: var(--primary-color) !important;
+    margin-top: 15pt !important;
+    margin-bottom: 5pt !important;
+    padding-bottom: 2pt !important;
+    border-bottom: 1pt solid var(--secondary-color) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Элементы опыта */
+  .work-item {
+    page-break-inside: avoid !important;
+    margin-bottom: 10pt !important;
+    padding-bottom: 10pt !important;
+  }
+
+  .work-title {
+    font-size: 13pt !important;
+    color: var(--dark-color) !important;
+  }
+
+  .work-date {
+    color: var(--secondary-color) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Уменьшаем отступы для экономии места */
+  .section {
+    margin-bottom: 15pt !important;
+  }
+
+  /* Навыки */
+  .skill-tags {
+    gap: 3pt !important;
+  }
+
+  .skill-tag {
+    background-color: var(--light-color) !important;
+    padding: 2pt 5pt !important;
+    border-radius: 3pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Предотвращаем обрыв важных блоков */
+  .profile,
+  .position-details,
+  .education-item,
+  .work-header,
+  .work-company,
+  .work-description,
+  .tech-stack,
+  .projects,
+  .languages {
+    page-break-inside: avoid !important;
+  }
+
+  /* Принудительные разрывы страниц при необходимости */
+  .experience-section {
+    page-break-after: auto !important;
+  }
+
+  /* Футер */
   footer {
-    page-break-inside: avoid;
+    margin-top: 15pt !important;
+    padding-top: 5pt !important;
+    border-top: 1pt solid var(--secondary-color) !important;
+    color: var(--dark-color) !important;
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Оптимизация иконок */
+  .contact-icon {
+    fill: var(--light-color) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Скрываем фон about-me */
+  .about-me {
+    background-color: var(--light-color) !important;
+    padding: 10pt !important;
+    border-radius: 3pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Компактный режим для контента */
+  .header-content {
+    flex-direction: column !important;
   }
 }
 
