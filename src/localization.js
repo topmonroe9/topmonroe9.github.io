@@ -1,6 +1,7 @@
 const localization = {
   ru: {
     // Основная информация
+    page_title: "Семенченко Егор - Резюме",
     name: "Семенченко Егор",
     age: "25 лет",
     location_label: "Проживание",
@@ -199,6 +200,7 @@ const localization = {
   },
 
   en: {
+    page_title: "Egor Semenchenko - Resume",
     // Основная информация
     name: "Egor Semenchenko",
     age: "25 years old",
