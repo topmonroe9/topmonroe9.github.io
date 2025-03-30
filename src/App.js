@@ -159,23 +159,13 @@ function Header() {
           </div>
           <div className="action-buttons">
             <a
-              href={`Egor Semenchenko NodeJS ${
-                language === "en" ? "EN" : ""
-              }.pdf`}
+              href="#"
               className="download-btn"
-              download
+              onClick={(e) => {
+                e.preventDefault();
+                handleDownload(language);
+              }}
             >
-              <svg
-                className="download-icon"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 16L12 8" />
-                <path d="M9 13L12 16L15 13" />
-                <path d="M20 18V19C20 20.105 19.105 21 18 21H6C4.895 21 4 20.105 4 19V18" />
-                <path d="M12 3V3C16.971 3 21 7.029 21 12V12" />
-                <path d="M12 3V3C7.029 3 3 7.029 3 12V12" />
-              </svg>
               <span id="download-text">{strings.download_pdf}</span>
             </a>
             <button
@@ -717,6 +707,27 @@ function AboutSection() {
       </div>
     </section>
   );
+}
+
+function handleDownload(language) {
+  const fileName =
+    language === "en"
+      ? "Egor Semenchenko NodeJS.pdf"
+      : "Егор Семенченко NodeJS.pdf";
+
+  // Create a link element
+  const link = document.createElement("a");
+  link.href = fileName;
+  link.download = fileName;
+
+  // Append to the document
+  document.body.appendChild(link);
+
+  // Trigger the download
+  link.click();
+
+  // Clean up
+  document.body.removeChild(link);
 }
 
 export default ResumeApp;
