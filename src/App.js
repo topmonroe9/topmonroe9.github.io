@@ -23,6 +23,17 @@ function ResumeApp() {
     document.title = localization[language].page_title;
   }, [language]);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    script.defer = true;
+    script.setAttribute(
+      "data-cf-beacon",
+      '{"token": "6058b50e19d9440795dfaeb043349da3"}'
+    );
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <LanguageContext.Provider
       value={{
