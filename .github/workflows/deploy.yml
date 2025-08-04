@@ -2,8 +2,17 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: [main] # Change this to your default branch if it's not 'main'
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -11,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: "16" # You can use a different version if needed
+          node-version: "20"
           cache: "npm"
 
       - name: Install dependencies
@@ -25,11 +34,16 @@ jobs:
       - name: Build React app
         run: npm run build
         env:
-          CI: false # This prevents the build from failing on warnings
+          CI: false
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './build'
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: gh-pages # The branch the action should deploy to
-          folder: build # The folder the action should deploy (output of npm run build)
-          clean: true # Automatically remove deleted files from the deployment
+        id: deployment
+        uses: actions/deploy-pages@v4
