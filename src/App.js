@@ -573,7 +573,7 @@ function ExperienceSection() {
           </div>
           <div className="work-company">{job.company}</div>
 
-          {job.location && <div className="work-location">{job.location}</div>}
+          {/* {job.location && <div className="work-location">{job.location}</div>} */}
 
           {job.industry && (
             <div className="work-industry">

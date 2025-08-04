@@ -107,7 +107,7 @@ const localization = {
       "Интегрировал Google Calendar, OAuth и различные API для создания комплексных систем планирования и отчетности.",
 
     job2_title: "Руководитель производства",
-    job2_date: "Январь 2024 — настоящее время (1 год 3 месяца)",
+    job2_date: "Январь 2024 — Февраль 2025 (1 год 2 месяца)",
     job2_company: "Planet Sirius",
     job2_location: "Москва",
     job2_industry: "FMCG Одежда, обувь, аксессуары, текстиль (Производство)",
@@ -305,9 +305,9 @@ const localization = {
       "Integrated Google Calendar, OAuth, and various APIs to build comprehensive scheduling and reporting systems.",
 
     job2_title: "Head of Production",
-    job2_date: "January 2024 — Present (1 year 3 months)",
+    job2_date: "January 2024 — February 2025 (1 year 2 months)",
     job2_company: "Planet Sirius",
-    job2_location: "Moscow",
+    // job2_location: "Moscow",
     job2_industry:
       "FMCG Clothing, footwear, accessories, textiles (Manufacturing)",
     job2_bullet1:
