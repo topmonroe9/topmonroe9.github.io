@@ -89,7 +89,7 @@ function Header() {
                 </a>
               </div>
               <div className="contact-info">
-                <div className="contact-item">
+                {/* <div className="contact-item">
                   <svg
                     className="contact-icon"
                     viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ function Header() {
                   <a href="tel:+79534424717" id="phone">
                     +7 (953) 442-47-17
                   </a>
-                </div>
+                </div> */}
                 <div className="contact-item">
                   <svg
                     className="contact-icon"
@@ -142,9 +142,9 @@ function Header() {
                 </div>
               </div>
               <div className="contact-info">
-                <div className="contact-item" id="location">
+                {/* <div className="contact-item" id="location">
                   {strings.location_label}: {strings.location}
-                </div>
+                </div> */}
                 <div className="contact-item">
                   <a
                     href="https://www.linkedin.com/in/egor-semenchenko/"

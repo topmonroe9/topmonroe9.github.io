@@ -3,14 +3,14 @@ const localization = {
     // Основная информация
     page_title: "Семенченко Егор - Резюме",
     name: "Семенченко Егор",
-    age: "25 лет",
+    age: "26 лет",
     location_label: "Проживание",
     location: "Москва",
     download_pdf: "Скачать PDF",
     print: "Печать",
 
     // Заголовки секций
-    job_title: "Middle Node.JS Developer",
+    job_title: "Senior Node.JS Developer",
     job_specs:
       "Специализация: Back End / Full Stack разработка, техническое руководство & управление командой\nГрафик работы: полный день, удаленная работа",
 
@@ -19,7 +19,7 @@ const localization = {
     skills_title: "Навыки",
     achievements_title: "Ключевые достижения",
     case_studies_title: "Кейсы из карьеры",
-    experience_title: "Опыт работы — 4 года 3 месяца",
+    experience_title: "Опыт работы — 6+ лет",
     education_title: "Образование и профессиональное развитие",
     about_title: "Обо мне",
 
@@ -55,7 +55,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Full Stack разработчик с более чем 4-летним опытом, специализирующийся на backend-разработке с использованием Node.js и frontend-решениях на React. Создавал высоконагруженные приложения, обрабатывающие 15,000+ транзакций ежедневно, интегрировал платежные системы и руководил командами разработчиков.\n\nМой карьерный путь отражает не просто универсальность, а стратегическую адаптивность — я целенаправленно расширил свою экспертизу от чистой разработки до управления производством, чтобы получить более глубокое понимание бизнес-процессов и создавать большую ценность. Эта двойная компетенция в технической реализации и операционном управлении дает мне уникальное понимание того, как технологии могут эффективно решать бизнес-задачи.",
+      "Full Stack разработчик с более чем 6-летним опытом, специализирующийся на backend-разработке с использованием Node.js и frontend-решениях на React. Создавал высоконагруженные приложения, обрабатывающие 15,000+ транзакций ежедневно, интегрировал платежные системы и руководил командами разработчиков.\n\nМой карьерный путь отражает не просто универсальность, а стратегическую адаптивность — я целенаправленно расширил свою экспертизу от чистой разработки до управления производством, чтобы получить более глубокое понимание бизнес-процессов и создавать большую ценность. Эта двойная компетенция в технической реализации и операционном управлении дает мне уникальное понимание того, как технологии могут эффективно решать бизнес-задачи.",
 
     motivation_content:
       "Я увлечен созданием сложных технических решений, которые для конечных пользователей выглядят простыми и интуитивно понятными. Нет ничего более удовлетворяющего, чем создание комплексных систем, с которыми люди взаимодействуют без усилий, даже не догадываясь о сложной архитектуре, скрытой под поверхностью.\n\nЯ нахожу огромное удовлетворение в менторинге младших разработчиков и наблюдении за их профессиональным ростом. Делиться знаниями и видеть, как человек эволюционирует от борьбы с базовыми концепциями до самостоятельного решения сложных задач — невероятно вдохновляющий опыт. Эта приверженность развитию команды помогла мне создавать высокоэффективные коллективы, которые стабильно показывают исключительные результаты.",
@@ -94,7 +94,7 @@ const localization = {
 
     // Опыт работы
     job1_title: "Full Stack Engineer",
-    job1_date: "Март 2024 — настоящее время (1 год 1 месяц)",
+    job1_date: "Январь 2022 — настоящее время (3 года 6 месяцев)",
     job1_company:
       "Индивидуальное предпринимательство / частная практика / фриланс",
     job1_bullet1:
@@ -203,14 +203,14 @@ const localization = {
     page_title: "Egor Semenchenko - Resume",
     // Основная информация
     name: "Egor Semenchenko",
-    age: "25 years old",
+    age: "26 years old",
     location_label: "Location",
     location: "Moscow",
     download_pdf: "Download PDF",
     print: "Print",
 
     // Заголовки секций
-    job_title: "Middle  Node.JS Developer",
+    job_title: "Senior Node.JS Developer",
     job_specs:
       "Specialization: Full Stack Development, Technical Leadership\nWork schedule: Full-time, Remote work",
 
@@ -219,7 +219,7 @@ const localization = {
     skills_title: "Skills",
     achievements_title: "Key Achievements",
     case_studies_title: "Career Case Studies",
-    experience_title: "Work Experience — 4 years 3 months",
+    experience_title: "Work Experience — 6+ years",
     education_title: "Education & Professional Development",
     about_title: "About Me",
 
@@ -255,7 +255,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Full Stack Developer with 4+ years of experience specializing in Node.js backend development and React frontend solutions. I've built high-load applications handling 15,000+ daily transactions, integrated payment systems, and led development teams.\n\nMy career path reflects my strategic adaptability rather than simply being a \"jack of all trades\" - I've deliberately expanded from pure development into production management to gain business perspective and create more value. This dual expertise in both technical implementation and operational management gives me unique insights into how technology can effectively solve business challenges.",
+      "Full Stack Developer with 6+ years of experience specializing in Node.js backend development and React frontend solutions. I've built high-load applications handling 15,000+ daily transactions, integrated payment systems, and led development teams.\n\nMy career path reflects my strategic adaptability rather than simply being a \"jack of all trades\" - I've deliberately expanded from pure development into production management to gain business perspective and create more value. This dual expertise in both technical implementation and operational management gives me unique insights into how technology can effectively solve business challenges.",
 
     motivation_content:
       "I'm passionate about creating sophisticated technical solutions that appear seamless to end-users. There's nothing more satisfying than building complex systems that people interact with effortlessly, completely unaware of the intricate architecture beneath the surface.\n\nI find tremendous fulfillment in mentoring junior developers and watching their growth. Sharing knowledge and seeing someone evolve from struggling with basic concepts to independently solving complex problems is incredibly rewarding. This commitment to team development has helped me build high-performing teams that consistently deliver exceptional results.",
@@ -293,7 +293,7 @@ const localization = {
 
     // Опыт работы
     job1_title: "Full Stack Engineer",
-    job1_date: "March 2024 — Present (1 year 1 month)",
+    job1_date: "January 2022 — Present (3 years 6 months)",
     job1_company: "Freelance",
     job1_bullet1:
       "Developed an accounting and analytics system for a payment platform processing up to 10,000 transactions daily with 99.9% accuracy.",
