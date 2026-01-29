@@ -497,6 +497,12 @@ main {
   margin-top: 0.5rem;
 }
 
+.work-intro {
+  margin: 0.75rem 0;
+  color: #444;
+  font-style: italic;
+}
+
 .projects {
   margin-top: 1rem;
   padding-top: 1rem;

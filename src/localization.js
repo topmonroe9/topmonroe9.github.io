@@ -3,14 +3,14 @@ const localization = {
     // Основная информация
     page_title: "Семенченко Егор - Резюме",
     name: "Семенченко Егор",
-    age: "26 лет",
+    age: "27 лет",
     location_label: "Проживание",
     location: "Москва",
     download_pdf: "Скачать PDF",
     print: "Печать",
 
     // Заголовки секций
-    job_title: "Senior Node.JS Developer",
+    job_title: "Team Lead Node.js / Head of IT",
     job_specs:
       "Специализация: Back End / Full Stack разработка, техническое руководство & управление командой\nГрафик работы: полный день, удаленная работа",
 
@@ -19,7 +19,7 @@ const localization = {
     skills_title: "Навыки",
     achievements_title: "Ключевые достижения",
     case_studies_title: "Кейсы из карьеры",
-    experience_title: "Опыт работы — 6+ лет",
+    experience_title: "Опыт работы — 6 лет 10 месяцев",
     education_title: "Образование и профессиональное развитие",
     about_title: "Обо мне",
 
@@ -30,6 +30,7 @@ const localization = {
     databases: "Базы данных",
     devops: "DevOps и инфраструктура",
     integrations: "Интеграции",
+    analytics: "Аналитика",
     soft_skills: "Софт-скилы",
     payment_systems: "Платежные системы",
 
@@ -55,7 +56,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Full Stack разработчик с более чем 6-летним опытом, специализирующийся на backend-разработке с использованием Node.js и frontend-решениях на React. Создавал высоконагруженные приложения, обрабатывающие 15,000+ транзакций ежедневно, интегрировал платежные системы и руководил командами разработчиков.\n\nМой карьерный путь отражает не просто универсальность, а стратегическую адаптивность — я целенаправленно расширил свою экспертизу от чистой разработки до управления производством, чтобы получить более глубокое понимание бизнес-процессов и создавать большую ценность. Эта двойная компетенция в технической реализации и операционном управлении дает мне уникальное понимание того, как технологии могут эффективно решать бизнес-задачи.",
+      "Tech Lead / Head of IT с 6+ годами опыта в разработке и 3+ годами в управлении командами. Строил IT-инфраструктуру и команды с нуля, запускал высоконагруженные системы (15,000+ транзакций в день). Сильная сторона — превращать хаос в работающие процессы: мигрировал компанию с 60 Google-таблиц на единую BI-платформу, сократил время формирования отчётов с часов до минут.\n\nТехнический стек: Node.js, NestJS, PostgreSQL, AWS. Дополнительно: Python, DevOps, построение аналитических систем.",
 
     motivation_content:
       "Я увлечен созданием сложных технических решений, которые для конечных пользователей выглядят простыми и интуитивно понятными. Нет ничего более удовлетворяющего, чем создание комплексных систем, с которыми люди взаимодействуют без усилий, даже не догадываясь о сложной архитектуре, скрытой под поверхностью.\n\nЯ нахожу огромное удовлетворение в менторинге младших разработчиков и наблюдении за их профессиональным ростом. Делиться знаниями и видеть, как человек эволюционирует от борьбы с базовыми концепциями до самостоятельного решения сложных задач — невероятно вдохновляющий опыт. Эта приверженность развитию команды помогла мне создавать высокоэффективные коллективы, которые стабильно показывают исключительные результаты.",
@@ -93,71 +94,83 @@ const localization = {
       "Результат: Клиент получил ценное понимание процесса разработки, наши отношения значительно улучшились, и мы установили более структурированную процедуру управления изменениями, которая принесла пользу обеим сторонам.",
 
     // Опыт работы
-    job1_title: "Full Stack Engineer",
-    job1_date: "Январь 2022 — настоящее время (3 года 6 месяцев)",
-    job1_company:
-      "Индивидуальное предпринимательство / частная практика / фриланс",
-    job1_bullet1:
-      "Разработал систему учёта и аналитики для платежной платформы, обрабатывающей до 10,000 транзакций в день с доступностью 99.9%.",
-    job1_bullet2:
-      "Создал автоматизированные скрипты для Excel и Google Sheets, сокращающие время на обработку данных на 70%.",
-    job1_bullet3:
-      "Спроектировал и разработал 3 CRM-системы для клиентов из разных отраслей, оптимизировав внутренние процессы и увеличив производительность персонала на 35%.",
-    job1_bullet4:
-      "Интегрировал Google Calendar, OAuth и различные API для создания комплексных систем планирования и отчетности.",
+    job1_title: "Head of IT",
+    job1_date: "Март 2025 — Декабрь 2025 (10 месяцев)",
+    job1_company: "Digital-агентство (Проектная работа)",
+    job1_location: "Москва",
+    job1_stack: "Backend: Node.js, NestJS, Python | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch) | Analytics: Metabase | DevOps: Docker, Git, CI/CD | Monitoring: Grafana, Prometheus",
+    job1_section1_title: "ПОСТРОЕНИЕ IT-ИНФРАСТРУКТУРЫ С НУЛЯ:",
+    job1_bullet1: "Спроектировал и реализовал полную IT-инфраструктуру компании на AWS",
+    job1_bullet2: "Архитектура высокой доступности с обработкой 1000+ транзакций ежедневно",
+    job1_bullet3: "Внедрил резервное копирование и disaster recovery процедуры",
+    job1_section2_title: "УПРАВЛЕНИЕ КОМАНДОЙ:",
+    job1_bullet4: "Сформировал и управлял командой из 5 специалистов (сисадмин, дата-аналитик, фулстек-разработчик, разработчик парсеров)",
+    job1_bullet5: "Внедрил agile-практики: ежедневные stand-ups, sprint planning, ретроспективы",
+    job1_bullet6: "Организовал процессы через ClickUp с четкими SLA и метриками эффективности",
+    job1_section3_title: "РАЗРАБОТКА ВНУТРЕННИХ ПРОДУКТОВ:",
+    job1_bullet7: "Система аналитики продаж в реальном времени для отдела из 80+ операторов",
+    job1_bullet8: "AI-powered система автоматизации контент-процессов",
+    job1_bullet9: "Внутренние инструменты: кастомная ATS, аналитическая платформа, контент-система",
+    job1_section4_title: "СИСТЕМЫ АНАЛИТИКИ И BI:",
+    job1_bullet10: "Разработал комплексную BI-платформу на Metabase для 120+ пользователей",
+    job1_bullet11: "Внедрил автоматизированные отчеты и алерты для ключевых метрик",
+    job1_section5_title: "КЛЮЧЕВЫЕ РЕЗУЛЬТАТЫ:",
+    job1_bullet12: "Миграция 100% операций с ручных таблиц на автоматизированные системы",
+    job1_bullet13: "Снижение времени на формирование отчетов с часов до минут",
+    job1_bullet14: "Создание масштабируемой инфраструктуры для роста компании с 80 до 120+ сотрудников",
 
-    job2_title: "Руководитель производства",
-    job2_date: "Январь 2024 — Февраль 2025 (1 год 2 месяца)",
-    job2_company: "Planet Sirius",
-    job2_location: "Москва",
-    job2_industry: "FMCG Одежда, обувь, аксессуары, текстиль (Производство)",
-    job2_bullet1:
-      "Управлял производственным цехом из 100 сотрудников, обеспечивая своевременное выполнение заказов и соблюдение стандартов качества.",
-    job2_bullet2:
-      "Оптимизировал производственные процессы, что привело к снижению издержек на 25% и увеличению выпуска продукции на 15%.",
-    job2_bullet3:
-      "Внедрил систему контроля качества, сократившую процент брака с 15% до 2%.",
-    job2_bullet4:
-      "Разработал и внедрил ИТ-решения для автоматизации учета и планирования, сократив время на рутинные операции на 40%.",
-    job2_bullet5:
-      "Применил навыки антикризисного управления во время сбоев в цепочке поставок, разработав альтернативные стратегии снабжения, предотвратившие задержки производства.",
+    job2_title: "Fullstack-разработчик",
+    job2_date: "Июнь 2022 — Декабрь 2024 (2 года 7 месяцев)",
+    job2_company: "Индивидуальное предпринимательство / частная практика / фриланс",
+    job2_description: "Backend разработка и технический консалтинг для клиентов из fintech, healthcare и e-commerce секторов на Upwork. Создание платежных систем, dashboards в реальном времени и кастомных CRM решений.",
+    job2_stack: "Технологии: Node.js, NestJS, Python, PostgreSQL, MongoDB, Redis, AWS, Docker",
+    job2_projects_title: "Ключевые проекты:",
+    job2_bullet1: "Платформа аналитики платежей с обработкой 10,000+ транзакций ежедневно. Сократил время отклика API на 40% через оптимизацию кэширования.",
+    job2_bullet2: "Real-time трекер криптовалютного портфеля с WebSocket интеграциями для 50+ торговых пар.",
+    job2_bullet3: "3 кастомные CRM-системы, улучшившие эффективность workflow клиентов и управление данными.",
+    job2_bullet4: "HIPAA-compliant стартап для докторов и пациентов на американский рынок (serverless Firebase).",
+    job2_bullet5: "Технические аудиты и DevOps консалтинг для стартапов на ранних стадиях, включая ревью AWS инфраструктуры.",
+    job2_bullet6: "Интеграции платежей (Stripe), реализация OAuth, подключение сторонних API.",
 
-    job3_title: "Backend Engineer, Team Lead",
-    job3_date: "Январь 2021 — Декабрь 2022 (2 года)",
-    job3_company: "Anoda",
-    job3_stack: "Стек: AWS, nestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
+    job3_title: "Технический директор (CTO)",
+    job3_date: "Январь 2024 — Март 2025 (1 год 3 месяца)",
+    job3_company: "Производственная компания",
+    job3_industry: "Товары народного потребления (непищевые)\n• Одежда, обувь, аксессуары, текстиль (продвижение, оптовая торговля)\n• Одежда, обувь, аксессуары, текстиль (производство)",
+    job3_description: "Привлечён для цифровой трансформации производственной компании со штатом 100+ человек.",
     job3_bullet1:
-      "Руководил командой из 5 разработчиков, успешно запустивших 3 масштабных проекта с нуля в установленные сроки.",
+      "Спроектировал и внедрил систему автоматизации учёта и планирования производства, существенно сократив время на рутинные операции.",
     job3_bullet2:
-      "Спроектировал и разработал RESTful и GraphQL API для высоконагруженных сервисов с пиковой нагрузкой до 5000 запросов в минуту.",
+      "Разработал IT-решение для учета сдельной заработной платы, полностью устранившее необходимость ручной обработки табелей.",
     job3_bullet3:
-      "Интегрировал платежную систему Stripe с обработкой подписок и рекуррентных платежей, повысив конверсию платежей на 12%.",
+      "Разработал решение для контроля качества, снизившее процент брака с 15% до 2%.",
     job3_bullet4:
-      "Наставлял джуниор-разработчиков, что привело к повышению их эффективности на 30% в течение первых 6 месяцев.",
+      "Автоматизировал процессы, снизив операционные издержки и повысив производительность.",
     job3_bullet5:
-      "Управлял отношениями с клиентами и их ожиданиями, используя сильные коммуникационные навыки для согласования объема работ и сроков.",
-    job3_projects:
-      "Проекты моей команды с нуля:\n✓ Augmento — инновационная платформа для европейского арт-рынка, объединяющая цифровые технологии 3D и дополненной реальности с торговлей предметами искусства и дизайнерской мебелью\n✓ UseKyleApp — революционное музыкальное приложение для американского рынка, создающее новую экономическую модель взаимодействия между диджеями и аудиторией на живых мероприятиях\n✓ CareGave — передовая платформа для оптимизации рабочих процессов в сфере здравоохранения США, соединяющая медицинских специалистов с клиниками, нуждающимися в персонале",
+      "Интегрировал систему мониторинга цепочки поставок для оперативного реагирования на сбои.",
 
-    job4_title: "Backend Engineer",
-    job4_date: "Июнь 2021 — Декабрь 2021 (7 месяцев)",
-    job4_company: "InterLogistics",
-    job4_note: "(проектная работа параллельно с основной занятостью в Anoda)",
+    job4_title: "Backend Engineer, Team Lead",
+    job4_date: "Январь 2021 — Май 2022 (1 год 5 месяцев)",
+    job4_company: "Anoda",
+    job4_stack: "Стек: AWS, NestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
     job4_bullet1:
-      "Разработал систему автоматизированных ботов для участия в онлайн-аукционах Copart, передающих данные в реальном времени для принятия решений о покупке автомобилей.",
+      "Руководил командой из 5 разработчиков, успешно запустивших 3 масштабных проекта с нуля в установленные сроки.",
     job4_bullet2:
-      "Создал комплексные парсеры с использованием Puppeteer, извлекающие и структурирующие данные с более чем 200 сайтов логистических компаний-конкурентов с точностью 98%.",
+      "Спроектировал и разработал RESTful и GraphQL API для высоконагруженных сервисов с пиковой нагрузкой до 5000 запросов в минуту.",
     job4_bullet3:
-      "Реализовал полную экстракцию и систематизацию базы данных listex.info, создав ценный информационный ресурс для компании.",
+      "Интегрировал платежную систему Stripe с обработкой подписок и рекуррентных платежей, повысив конверсию платежей на 12%.",
     job4_bullet4:
-      "Спроектировал систему для отслеживания полной цепочки логистики автомобилей от аукциона до конечного пункта, что позволило оптимизировать транспортные маршруты и снизить издержки.",
+      "Наставлял джуниор-разработчиков, что привело к повышению их эффективности на 30% в течение первых 6 месяцев.",
+    job4_bullet5:
+      "Управлял отношениями с клиентами и их ожиданиями, используя сильные коммуникационные навыки для согласования объема работ и сроков.",
+    job4_projects:
+      "Проекты моей команды с нуля:\n• Augmento — платформа для европейского арт-рынка с 3D/AR технологиями для торговли предметами искусства\n• UseKyleApp — музыкальное приложение для американского рынка, создающее новую модель взаимодействия диджеев с аудиторией\n• CareGave — платформа для здравоохранения США, соединяющая медперсонал с клиниками",
 
     job5_title: "FullStack Engineer",
-    job5_date: "Январь 2020 — Июнь 2021 (1 год 6 месяцев)",
+    job5_date: "Январь 2020 — Январь 2021 (1 год 1 месяц)",
     job5_company: "MK 3",
     job5_location: "Москва, mk3.ru",
     job5_industry:
-      "Строительство, недвижимость, архитектура\n• Строительство коммерческих объектов (торговые площади, офисные здания)\n• Архитектура, дизайн",
+      "Строительство, недвижимость, эксплуатация, проектирование\n• Строительство коммерческих объектов (торговые площади, офисные здания)\n• Архитектура, проектирование",
     job5_bullet1:
       "Разработал плагины для ADOBE AutoCad и Revit, повысившие скорость проектирования на 40% и сократившие количество ошибок на 60%.",
     job5_bullet2:
@@ -166,6 +179,18 @@ const localization = {
       "Спроектировал и реализовал корпоративный веб-сайт компании, увеличивший приток клиентов через онлайн-каналы на 35%.",
     job5_bullet4:
       "Разработал адаптивные фронтенд-интерфейсы, улучшившие пользовательский опыт и сократившие время обучения новых пользователей на 50%.",
+
+    job6_title: "Backend Engineer",
+    job6_date: "Март 2019 — Декабрь 2019 (10 месяцев)",
+    job6_company: "InterLogistics",
+    job6_bullet1:
+      "Разработал систему автоматизированных ботов для участия в онлайн-аукционах Copart, передающих данные в реальном времени для принятия решений о покупке автомобилей.",
+    job6_bullet2:
+      "Создал комплексные парсеры с использованием Puppeteer, извлекающие и структурирующие данные с более чем 200 сайтов логистических компаний-конкурентов с точностью 98%.",
+    job6_bullet3:
+      "Реализовал полную экстракцию и систематизацию базы данных listex.info, создав ценный информационный ресурс для компании.",
+    job6_bullet4:
+      "Спроектировал систему для отслеживания полной цепочки логистики автомобилей от аукциона до конечного пункта, что позволило оптимизировать транспортные маршруты и снизить издержки.",
 
     // Образование
     education_level: "Высшее",
@@ -203,14 +228,14 @@ const localization = {
     page_title: "Egor Semenchenko - Resume",
     // Основная информация
     name: "Egor Semenchenko",
-    age: "26 years old",
+    age: "27 years old",
     location_label: "Location",
     location: "Moscow",
     download_pdf: "Download PDF",
     print: "Print",
 
     // Заголовки секций
-    job_title: "Senior Node.JS Developer",
+    job_title: "Team Lead Node.js / Head of IT",
     job_specs:
       "Specialization: Full Stack Development, Technical Leadership\nWork schedule: Full-time, Remote work",
 
@@ -219,7 +244,7 @@ const localization = {
     skills_title: "Skills",
     achievements_title: "Key Achievements",
     case_studies_title: "Career Case Studies",
-    experience_title: "Work Experience — 6+ years",
+    experience_title: "Work Experience — 6 years 10 months",
     education_title: "Education & Professional Development",
     about_title: "About Me",
 
@@ -230,6 +255,7 @@ const localization = {
     databases: "Databases",
     devops: "DevOps & Infrastructure",
     integrations: "Integrations",
+    analytics: "Analytics",
     soft_skills: "Soft Skills",
     payment_systems: "Payment Systems",
 
@@ -255,7 +281,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Full Stack Developer with 6+ years of experience specializing in Node.js backend development and React frontend solutions. I've built high-load applications handling 15,000+ daily transactions, integrated payment systems, and led development teams.\n\nMy career path reflects my strategic adaptability rather than simply being a \"jack of all trades\" - I've deliberately expanded from pure development into production management to gain business perspective and create more value. This dual expertise in both technical implementation and operational management gives me unique insights into how technology can effectively solve business challenges.",
+      "Tech Lead / Head of IT with 6+ years of development experience and 3+ years in team management. Built IT infrastructure and teams from scratch, launched high-load systems (15,000+ transactions per day). Core strength — turning chaos into working processes: migrated a company from 60 Google Sheets to a unified BI platform, reduced report generation time from hours to minutes.\n\nTech stack: Node.js, NestJS, PostgreSQL, AWS. Additionally: Python, DevOps, building analytics systems.",
 
     motivation_content:
       "I'm passionate about creating sophisticated technical solutions that appear seamless to end-users. There's nothing more satisfying than building complex systems that people interact with effortlessly, completely unaware of the intricate architecture beneath the surface.\n\nI find tremendous fulfillment in mentoring junior developers and watching their growth. Sharing knowledge and seeing someone evolve from struggling with basic concepts to independently solving complex problems is incredibly rewarding. This commitment to team development has helped me build high-performing teams that consistently deliver exceptional results.",
@@ -292,71 +318,83 @@ const localization = {
       "Outcome: The client gained valuable insight into the development process, our relationship improved significantly, and we established a more structured change management procedure that benefited both parties.",
 
     // Опыт работы
-    job1_title: "Full Stack Engineer",
-    job1_date: "January 2022 — Present (3 years 6 months)",
-    job1_company: "Freelance",
-    job1_bullet1:
-      "Developed an accounting and analytics system for a payment platform processing up to 10,000 transactions daily with 99.9% accuracy.",
-    job1_bullet2:
-      "Created automated scripts for Excel and Google Sheets that reduced data processing time by 70%.",
-    job1_bullet3:
-      "Designed and built 3 custom CRM systems for clients across different industries, optimizing internal processes and increasing staff productivity by 35%.",
-    job1_bullet4:
-      "Integrated Google Calendar, OAuth, and various APIs to build comprehensive scheduling and reporting systems.",
+    job1_title: "Head of IT",
+    job1_date: "March 2025 — December 2025 (10 months)",
+    job1_company: "Digital Agency (Project Work)",
+    job1_location: "Moscow",
+    job1_stack: "Backend: Node.js, NestJS, Python | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch) | Analytics: Metabase | DevOps: Docker, Git, CI/CD | Monitoring: Grafana, Prometheus",
+    job1_section1_title: "BUILDING IT INFRASTRUCTURE FROM SCRATCH:",
+    job1_bullet1: "Designed and implemented complete company IT infrastructure on AWS",
+    job1_bullet2: "High-availability architecture processing 1000+ transactions daily",
+    job1_bullet3: "Implemented backup and disaster recovery procedures",
+    job1_section2_title: "TEAM MANAGEMENT:",
+    job1_bullet4: "Built and managed a team of 5 specialists (sysadmin, data analyst, fullstack developer, parser developer)",
+    job1_bullet5: "Implemented agile practices: daily stand-ups, sprint planning, retrospectives",
+    job1_bullet6: "Organized processes through ClickUp with clear SLAs and efficiency metrics",
+    job1_section3_title: "INTERNAL PRODUCT DEVELOPMENT:",
+    job1_bullet7: "Real-time sales analytics system for 80+ operators",
+    job1_bullet8: "AI-powered content process automation system",
+    job1_bullet9: "Internal tools: custom ATS, analytics platform, content system",
+    job1_section4_title: "ANALYTICS & BI SYSTEMS:",
+    job1_bullet10: "Developed comprehensive BI platform on Metabase for 120+ users",
+    job1_bullet11: "Implemented automated reports and alerts for key metrics",
+    job1_section5_title: "KEY RESULTS:",
+    job1_bullet12: "Migrated 100% of operations from manual spreadsheets to automated systems",
+    job1_bullet13: "Reduced report generation time from hours to minutes",
+    job1_bullet14: "Created scalable infrastructure for company growth from 80 to 120+ employees",
 
-    job2_title: "Head of Production",
-    job2_date: "January 2024 — February 2025 (1 year 2 months)",
-    job2_company: "Planet Sirius",
-    // job2_location: "Moscow",
-    job2_industry:
-      "FMCG Clothing, footwear, accessories, textiles (Manufacturing)",
-    job2_bullet1:
-      "Managed a factory of 100 employees, ensuring timely order fulfillment and quality standards compliance.",
-    job2_bullet2:
-      "Optimized production processes resulting in a 25% cost reduction and 15% increase in output.",
-    job2_bullet3:
-      "Implemented a quality control system that reduced defect rates from 15% to 2%.",
-    job2_bullet4:
-      "Developed and deployed IT solutions for inventory management and production planning, reducing time spent on routine operations by 40%.",
-    job2_bullet5:
-      "Applied crisis management skills during supply chain disruptions, developing alternative sourcing strategies that prevented production delays.",
+    job2_title: "Fullstack Developer",
+    job2_date: "June 2022 — December 2024 (2 years 7 months)",
+    job2_company: "Freelance",
+    job2_description: "Backend development and technical consulting for clients in fintech, healthcare and e-commerce sectors on Upwork. Building payment systems, real-time dashboards and custom CRM solutions.",
+    job2_stack: "Technologies: Node.js, NestJS, Python, PostgreSQL, MongoDB, Redis, AWS, Docker",
+    job2_projects_title: "Key projects:",
+    job2_bullet1: "Payment analytics platform processing 10,000+ transactions daily. Reduced API response time by 40% through caching optimization.",
+    job2_bullet2: "Real-time cryptocurrency portfolio tracker with WebSocket integrations for 50+ trading pairs.",
+    job2_bullet3: "3 custom CRM systems that improved client workflow efficiency and data management.",
+    job2_bullet4: "HIPAA-compliant startup for doctors and patients for US market (serverless Firebase).",
+    job2_bullet5: "Technical audits and DevOps consulting for early-stage startups, including AWS infrastructure reviews.",
+    job2_bullet6: "Payment integrations (Stripe), OAuth implementation, third-party API connections.",
 
-    job3_title: "Backend Engineer, Team Lead",
-    job3_date: "January 2021 — December 2022 (2 years)",
-    job3_company: "Anoda",
-    job3_stack: "Stack: AWS, NestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
+    job3_title: "Chief Technology Officer (CTO)",
+    job3_date: "January 2024 — March 2025 (1 year 3 months)",
+    job3_company: "Manufacturing Company",
+    job3_industry: "Consumer goods (non-food)\n• Clothing, footwear, accessories, textiles (wholesale trade)\n• Clothing, footwear, accessories, textiles (manufacturing)",
+    job3_description: "Brought in for digital transformation of a manufacturing company with 100+ employees.",
     job3_bullet1:
-      "Led a team of 5 developers who successfully launched 3 large-scale projects from scratch within deadlines.",
+      "Designed and implemented an accounting and production planning automation system, significantly reducing time spent on routine operations.",
     job3_bullet2:
-      "Designed and developed RESTful and GraphQL APIs for high-load services with peak loads of up to 5000 requests per minute.",
+      "Developed an IT solution for piece-rate payroll accounting, completely eliminating the need for manual timesheet processing.",
     job3_bullet3:
-      "Integrated Stripe payment system with subscription and recurring payment processing, increasing payment conversion by 12%.",
+      "Developed a quality control solution that reduced defect rates from 15% to 2%.",
     job3_bullet4:
-      "Mentored junior developers, leading to a 30% increase in their efficiency during the first 6 months.",
+      "Automated processes, reducing operational costs and increasing productivity.",
     job3_bullet5:
-      "Managed client relationships and expectations, utilizing strong communication skills to negotiate scope and timelines.",
-    job3_projects:
-      "Projects built by my team from scratch:\n✓ Augmento — Cutting-edge European platform revolutionizing the art market by integrating 3D and augmented reality technologies for immersive previews of art pieces and designer furniture\n✓ UseKyleApp — Innovative US-based music application that transforms the economics of live music events by creating a direct marketplace between DJs and audience members\n✓ CareGave — Advanced healthcare staffing solution for the US market that streamlines the connection between medical professionals seeking flexible employment and healthcare facilities with staffing needs",
+      "Integrated a supply chain monitoring system for rapid response to disruptions.",
 
-    job4_title: "Backend Engineer",
-    job4_date: "June 2021 — December 2021 (7 months)",
-    job4_company: "InterLogistics",
-    job4_note: "(project work concurrent with primary employment at Anoda)",
+    job4_title: "Backend Engineer, Team Lead",
+    job4_date: "January 2021 — May 2022 (1 year 5 months)",
+    job4_company: "Anoda",
+    job4_stack: "Stack: AWS, NestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
     job4_bullet1:
-      "Developed automated bot system for participating in Copart online auctions, transmitting real-time data to the office for purchase decision-making.",
+      "Led a team of 5 developers who successfully launched 3 large-scale projects from scratch within deadlines.",
     job4_bullet2:
-      "Created comprehensive parsers using Puppeteer, extracting and structuring data from more than 200 competitor logistics company websites with 98% accuracy.",
+      "Designed and developed RESTful and GraphQL APIs for high-load services with peak loads of up to 5000 requests per minute.",
     job4_bullet3:
-      "Implemented complete extraction and systematization of the listex.info database, creating a valuable information resource for the company.",
+      "Integrated Stripe payment system with subscription and recurring payment processing, increasing payment conversion by 12%.",
     job4_bullet4:
-      "Designed a system for tracking the complete logistics chain of vehicles from auction to final destination, allowing for optimized transport routes and reduced costs.",
+      "Mentored junior developers, leading to a 30% increase in their efficiency during the first 6 months.",
+    job4_bullet5:
+      "Managed client relationships and expectations, utilizing strong communication skills to negotiate scope and timelines.",
+    job4_projects:
+      "Projects built by my team from scratch:\n• Augmento — European art market platform with 3D/AR technologies for art trading\n• UseKyleApp — Music app for US market creating new DJ-audience interaction model\n• CareGave — US healthcare platform connecting medical staff with clinics",
 
     job5_title: "FullStack Engineer",
-    job5_date: "January 2020 — June 2021 (1 year 6 months)",
+    job5_date: "January 2020 — January 2021 (1 year 1 month)",
     job5_company: "MK 3",
     job5_location: "Moscow, mk3.ru",
     job5_industry:
-      "Construction, real estate, architecture\n• Commercial property construction (retail spaces, office buildings)\n• Architecture, design",
+      "Construction, real estate, operations, design\n• Commercial property construction (retail spaces, office buildings)\n• Architecture, design",
     job5_bullet1:
       "Developed plugins for ADOBE AutoCad and Revit that increased design speed by 40% and reduced errors by 60%.",
     job5_bullet2:
@@ -365,6 +403,18 @@ const localization = {
       "Designed and implemented the company's corporate website, increasing client acquisitions through online channels by 35%.",
     job5_bullet4:
       "Built responsive front-end interfaces that improved user experience and reduced training time for new users by 50%.",
+
+    job6_title: "Backend Engineer",
+    job6_date: "March 2019 — December 2019 (10 months)",
+    job6_company: "InterLogistics",
+    job6_bullet1:
+      "Developed automated bot system for participating in Copart online auctions, transmitting real-time data to the office for purchase decision-making.",
+    job6_bullet2:
+      "Created comprehensive parsers using Puppeteer, extracting and structuring data from more than 200 competitor logistics company websites with 98% accuracy.",
+    job6_bullet3:
+      "Implemented complete extraction and systematization of the listex.info database, creating a valuable information resource for the company.",
+    job6_bullet4:
+      "Designed a system for tracking the complete logistics chain of vehicles from auction to final destination, allowing for optimized transport routes and reduced costs.",
 
     // Образование
     education_level: "Higher Education",

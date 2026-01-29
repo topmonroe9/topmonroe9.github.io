@@ -291,7 +291,7 @@ function SkillsSection() {
   const skillCategories = [
     {
       title: strings.prog_languages,
-      skills: ["JavaScript", "TypeScript", "C#", "HTML/CSS", "Go (learning)"],
+      skills: ["JavaScript", "TypeScript", "Python", "C#", "HTML/CSS", "Go (learning)"],
     },
     {
       title: strings.backend,
@@ -311,15 +311,20 @@ function SkillsSection() {
     },
     {
       title: strings.databases,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "NocoDB"],
     },
     {
       title: strings.devops,
       skills: [
         "Docker",
         "AWS",
+        "EC2",
+        "RDS",
         "S3",
         "Lambda",
+        "CloudWatch",
+        "Grafana",
+        "Prometheus",
         "Yandex Cloud",
         "Linux",
         "CI/CD",
@@ -328,6 +333,10 @@ function SkillsSection() {
     {
       title: strings.integrations,
       skills: ["Stripe", "Google APIs", "Jira", "OAuth", "TG API"],
+    },
+    {
+      title: strings.analytics,
+      skills: ["Metabase", "Custom BI solutions"],
     },
   ];
 
@@ -499,32 +508,46 @@ function ExperienceSection() {
       title: strings.job1_title,
       date: strings.job1_date,
       company: strings.job1_company,
+      location: strings.job1_location,
+      stack: strings.job1_stack,
       bullets: [
         strings.job1_bullet1,
         strings.job1_bullet2,
         strings.job1_bullet3,
         strings.job1_bullet4,
+        strings.job1_bullet5,
+        strings.job1_bullet6,
+        strings.job1_bullet7,
+        strings.job1_bullet8,
+        strings.job1_bullet9,
+        strings.job1_bullet10,
+        strings.job1_bullet11,
+        strings.job1_bullet12,
+        strings.job1_bullet13,
+        strings.job1_bullet14,
       ],
     },
     {
       title: strings.job2_title,
       date: strings.job2_date,
       company: strings.job2_company,
-      location: strings.job2_location,
-      industry: strings.job2_industry,
+      description: strings.job2_description,
+      stack: strings.job2_stack,
       bullets: [
         strings.job2_bullet1,
         strings.job2_bullet2,
         strings.job2_bullet3,
         strings.job2_bullet4,
         strings.job2_bullet5,
+        strings.job2_bullet6,
       ],
     },
     {
       title: strings.job3_title,
       date: strings.job3_date,
       company: strings.job3_company,
-      stack: strings.job3_stack,
+      industry: strings.job3_industry,
+      description: strings.job3_description,
       bullets: [
         strings.job3_bullet1,
         strings.job3_bullet2,
@@ -532,19 +555,20 @@ function ExperienceSection() {
         strings.job3_bullet4,
         strings.job3_bullet5,
       ],
-      projects: strings.job3_projects,
     },
     {
       title: strings.job4_title,
       date: strings.job4_date,
       company: strings.job4_company,
-      note: strings.job4_note,
+      stack: strings.job4_stack,
       bullets: [
         strings.job4_bullet1,
         strings.job4_bullet2,
         strings.job4_bullet3,
         strings.job4_bullet4,
+        strings.job4_bullet5,
       ],
+      projects: strings.job4_projects,
     },
     {
       title: strings.job5_title,
@@ -557,6 +581,17 @@ function ExperienceSection() {
         strings.job5_bullet2,
         strings.job5_bullet3,
         strings.job5_bullet4,
+      ],
+    },
+    {
+      title: strings.job6_title,
+      date: strings.job6_date,
+      company: strings.job6_company,
+      bullets: [
+        strings.job6_bullet1,
+        strings.job6_bullet2,
+        strings.job6_bullet3,
+        strings.job6_bullet4,
       ],
     },
   ];
@@ -587,6 +622,8 @@ function ExperienceSection() {
           )}
 
           {job.stack && <div className="tech-stack">{job.stack}</div>}
+
+          {job.description && <div className="work-intro">{job.description}</div>}
 
           <div className="work-description">
             {job.note && <p className="work-note">{job.note}</p>}
