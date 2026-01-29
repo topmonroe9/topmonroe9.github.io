@@ -159,6 +159,7 @@ function Header() {
               </div>
             </div>
           </div>
+          {/* TODO: Temporarily hidden download and print buttons
           <div className="action-buttons">
             <a
               href="#"
@@ -188,6 +189,7 @@ function Header() {
               <span id="print-text">{strings.print}</span>
             </button>
           </div>
+          */}
         </div>
       </div>
       <div className="language-switch">
