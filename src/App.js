@@ -1,6 +1,7 @@
-import React, { useState, useEffect, createContext, useContext } from "react";
+import React, { useState, useEffect, createContext, useContext, useCallback } from "react";
 import "./styles.css";
 import localization from "./localization.js";
+import portfolioProjects from "./portfolioData.js";
 // Контекст для управления языком
 const LanguageContext = createContext();
 
@@ -54,6 +55,7 @@ function ResumeApp() {
           <div className="container">
             <SkillsSection />
             <AchievementsSection />
+            <PortfolioSection />
             <ExperienceSection />
             <SummarySection />
 
@@ -496,6 +498,270 @@ function CaseStudiesSection() {
         </div>
       ))}
     </section>
+  );
+}
+
+// Компонент секции портфолио
+function PortfolioSection() {
+  const { strings } = useContext(LanguageContext);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  return (
+    <section className="section portfolio-section">
+      <h2 className="section-title">{strings.portfolio_title}</h2>
+      <div className="portfolio-grid">
+        {portfolioProjects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            strings={strings}
+            onClick={() => setSelectedProject(project)}
+          />
+        ))}
+      </div>
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          strings={strings}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+    </section>
+  );
+}
+
+// Компонент карточки проекта
+function ProjectCard({ project, strings, onClick }) {
+  const title = strings[`portfolio_${project.id}_title`];
+  const shortDesc = strings[`portfolio_${project.id}_short`];
+  const maxTechDisplay = 4;
+  const remainingTech = project.techStack.length - maxTechDisplay;
+  const [imageError, setImageError] = useState(false);
+
+  const placeholderSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Crect fill='%23f0f0f0' width='400' height='200'/%3E%3Ctext fill='%23999' font-family='sans-serif' font-size='14' x='50%25' y='45%25' text-anchor='middle'%3E${encodeURIComponent(title)}%3C/text%3E%3Ctext fill='%23bbb' font-family='sans-serif' font-size='12' x='50%25' y='55%25' text-anchor='middle'%3EScreenshot coming soon%3C/text%3E%3C/svg%3E`;
+
+  return (
+    <div className="project-card" onClick={onClick}>
+      <div className="project-card-image">
+        {project.video ? (
+          <video
+            src={project.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        ) : (
+          <img
+            src={imageError ? placeholderSvg : project.images[0]}
+            alt={title}
+            onError={() => setImageError(true)}
+          />
+        )}
+        <div className="project-card-overlay">
+          <span>{strings.portfolio_view_project}</span>
+        </div>
+      </div>
+      <div className="project-card-content">
+        <h3 className="project-card-title">{title}</h3>
+        <p className="project-card-description">{shortDesc}</p>
+        <div className="project-card-tech">
+          {project.techStack.slice(0, maxTechDisplay).map((tech, index) => (
+            <span key={index} className="tech-badge">
+              {tech}
+            </span>
+          ))}
+          {remainingTech > 0 && (
+            <span className="tech-badge more">+{remainingTech}</span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Компонент модального окна проекта
+function ProjectModal({ project, strings, onClose }) {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [showEmbed, setShowEmbed] = useState(!!project.embedUrl);
+
+  const title = strings[`portfolio_${project.id}_title`];
+  const description = strings[`portfolio_${project.id}_desc`];
+
+  const handlePrev = useCallback(() => {
+    setActiveImageIndex((prev) =>
+      prev === 0 ? project.images.length - 1 : prev - 1
+    );
+  }, [project.images.length]);
+
+  const handleNext = useCallback(() => {
+    setActiveImageIndex((prev) =>
+      prev === project.images.length - 1 ? 0 : prev + 1
+    );
+  }, [project.images.length]);
+
+  // Обработка клавиш
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      } else if (!showEmbed && e.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (!showEmbed && e.key === 'ArrowRight') {
+        handleNext();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [onClose, handlePrev, handleNext, showEmbed]);
+
+  // Закрытие при клике на backdrop
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  // Форматирование описания с поддержкой **жирного** текста
+  const formatDescription = (text) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={index}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+    });
+  };
+
+  return (
+    <div className="portfolio-modal-backdrop" onClick={handleBackdropClick}>
+      <div className="portfolio-modal">
+        <button className="modal-close-btn" onClick={onClose} aria-label={strings.portfolio_close}>
+          &times;
+        </button>
+
+        {/* Галерея изображений или iframe */}
+        <div className="modal-gallery">
+          {showEmbed && project.embedUrl ? (
+            <div className="gallery-embed">
+              <iframe
+                src={project.embedUrl}
+                title={title}
+                sandbox="allow-scripts allow-same-origin allow-popups"
+              />
+              <a
+                href={project.embedUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="embed-external-link"
+              >
+                {strings.portfolio_open_external || 'Open in new tab'} ↗
+              </a>
+            </div>
+          ) : project.video ? (
+            <div className="gallery-main gallery-video">
+              <video
+                src={project.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '8px' }}
+              />
+            </div>
+          ) : (
+            <>
+              <div className="gallery-main">
+                <button
+                  className="gallery-nav prev"
+                  onClick={handlePrev}
+                  aria-label={strings.portfolio_prev}
+                >
+                  &#8249;
+                </button>
+                <img
+                  src={project.images[activeImageIndex]}
+                  alt={`${title} - ${activeImageIndex + 1}`}
+                  onError={(e) => {
+                    e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f0f0f0" width="400" height="300"/%3E%3Ctext fill="%23999" font-family="sans-serif" font-size="16" x="50%25" y="50%25" text-anchor="middle"%3EImage not found%3C/text%3E%3C/svg%3E';
+                  }}
+                />
+                <button
+                  className="gallery-nav next"
+                  onClick={handleNext}
+                  aria-label={strings.portfolio_next}
+                >
+                  &#8250;
+                </button>
+              </div>
+              <div className="gallery-dots">
+                {project.images.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`gallery-dot ${index === activeImageIndex ? 'active' : ''}`}
+                    onClick={() => setActiveImageIndex(index)}
+                    aria-label={`Image ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Детали проекта */}
+        <div className="modal-details">
+          <h2 className="modal-title">{title}</h2>
+          <div className="modal-year">{project.year}</div>
+          <div className="modal-description">
+            {formatDescription(description)}
+          </div>
+
+          <div className="modal-tech-section">
+            <h3 className="modal-tech-title">{strings.portfolio_tech_stack}</h3>
+            <div className="modal-tech-badges">
+              {project.techStack.map((tech, index) => (
+                <span key={index} className="tech-badge">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {(project.links.demo || project.links.github) && (
+            <div className="modal-links">
+              {project.links.demo && (
+                <a
+                  href={project.links.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-link primary"
+                >
+                  Demo
+                </a>
+              )}
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-link secondary"
+                >
+                  GitHub
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 

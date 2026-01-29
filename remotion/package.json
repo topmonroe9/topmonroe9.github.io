@@ -1,0 +1,23 @@
+{
+  "name": "alfa-video",
+  "version": "1.0.0",
+  "description": "Remotion video for ALFA Smart Document Matcher project",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render AlfaVideoRU out/alfa-video-ru.mp4 && remotion render AlfaVideoEN out/alfa-video-en.mp4",
+    "build:ru": "remotion render AlfaVideoRU out/alfa-video-ru.mp4",
+    "build:en": "remotion render AlfaVideoEN out/alfa-video-en.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.242",
+    "@remotion/transitions": "4.0.242",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.242"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}

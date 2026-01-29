@@ -2,6 +2,72 @@ const localization = {
   ru: {
     // Основная информация
     page_title: "Семенченко Егор - Резюме",
+
+    // Секция портфолио
+    portfolio_title: "Портфолио",
+    portfolio_view_project: "Подробнее",
+    portfolio_tech_stack: "Технологии",
+    portfolio_close: "Закрыть",
+    portfolio_prev: "Предыдущее",
+    portfolio_next: "Следующее",
+    portfolio_open_external: "Открыть в новой вкладке",
+
+    // Проект APREE Platform
+    'portfolio_apree-platform_title': "Enterprise IT Platform",
+    'portfolio_apree-platform_short': "Внутренняя IT-инфраструктура компании: 15+ микросервисов на AWS",
+    'portfolio_apree-platform_desc': `Построил с нуля IT-инфраструктуру для компании со штатом 120+ человек: 2 EC2 инстанса, Aurora PostgreSQL, 13 CloudFront CDN, 31 S3 bucket.
+
+**Ключевые системы:**
+• Analytics Platform — дашборды KPI с агрегацией из множества источников, план/факт
+• Monroe DAM — микросервисная система управления контентом с Lambda-генерацией thumbnail
+• HR System — управление персоналом с интеграцией Google Workspace
+• SSO Auth — единая аутентификация для всех сервисов
+
+**Архитектура:**
+• 15+ микросервисов с изолированными PostgreSQL-схемами
+• CI/CD через GitHub Actions → ECR → Traefik blue-green deployment
+• AWS CDK для Infrastructure as Code
+• Prometheus + Grafana мониторинг
+
+**Результат:** Инфраструктура за $350/месяц, обслуживающая 120+ пользователей`,
+
+    // Проект ALFA
+    portfolio_alfa_title: "Smart Document Matcher",
+    portfolio_alfa_short: "AI-система автоматической обработки бухгалтерских документов",
+    portfolio_alfa_desc: `Система автоматического сопоставления сканированных PDF документов (счета-фактуры, акты, УПД) со строками бухгалтерских реестров СЭД.
+
+**Проблема:** Тысячи старых сканированных закрывающих документов нужно сопоставить с электронными реестрами операций.
+
+**Решение:**
+• AI-извлечение данных через Claude API (единый промпт 500+ строк)
+• OCR pipeline: GCP Vision batch (16 изображений/запрос) + Pytesseract
+• Fuzzy matching с реестрами через RapidFuzz
+• Распознавание рукописных бухгалтерских номеров (Extended Thinking)
+
+**Ключевые оптимизации:**
+• Anthropic Batch API — 50% экономии на Claude
+• Индексный lookup O(1) для точных совпадений
+• Параллельная обработка с семафорами`,
+
+    // Проект Crypnal
+    portfolio_crypnal_title: "Crypto Whale Tracker",
+    portfolio_crypnal_short: "Real-time платформа мониторинга крупных криптовалютных сделок",
+    portfolio_crypnal_desc: `Профессиональная платформа для отслеживания whale trades и ликвидаций в реальном времени на 8+ криптобиржах.
+
+**Задача:** Создать систему мгновенного оповещения о крупных сделках для криптотрейдеров.
+
+**Архитектура:**
+• WebSocket-сервер для real-time трансляции сделок
+• Multi-exchange коннекторы (Binance, Bybit, OKX, Coinbase, Hyperliquid)
+• Server-side фильтрация для снижения трафика
+• Redis для агрегации и кэширования в реальном времени
+
+**Ключевые фичи:**
+• 84+ React компонентов с Vite сборкой
+• Dual-threshold система фильтрации (whale/liquidation)
+• Telegram/Twitter боты для автопостинга алертов
+• Prometheus + Grafana мониторинг
+• TTL-индексы MongoDB для автоочистки данных`,
     name: "Семенченко Егор",
     age: "27 лет",
     location_label: "Проживание",
@@ -228,6 +294,72 @@ const localization = {
     page_title: "Egor Semenchenko - Resume",
     // Основная информация
     name: "Egor Semenchenko",
+
+    // Portfolio section
+    portfolio_title: "Portfolio",
+    portfolio_view_project: "View Details",
+    portfolio_tech_stack: "Technologies",
+    portfolio_close: "Close",
+    portfolio_prev: "Previous",
+    portfolio_next: "Next",
+    portfolio_open_external: "Open in new tab",
+
+    // APREE Platform Project
+    'portfolio_apree-platform_title': "Enterprise IT Platform",
+    'portfolio_apree-platform_short': "Internal IT infrastructure: 15+ microservices on AWS",
+    'portfolio_apree-platform_desc': `Built company IT infrastructure from scratch for 120+ employees: 2 EC2 instances, Aurora PostgreSQL, 13 CloudFront CDN, 31 S3 buckets.
+
+**Key Systems:**
+• Analytics Platform — KPI dashboards with multi-source aggregation, plan vs actual
+• Monroe DAM — microservice content management with Lambda thumbnail generation
+• HR System — personnel management with Google Workspace integration
+• SSO Auth — unified authentication across all services
+
+**Architecture:**
+• 15+ microservices with isolated PostgreSQL schemas
+• CI/CD via GitHub Actions → ECR → Traefik blue-green deployment
+• AWS CDK for Infrastructure as Code
+• Prometheus + Grafana monitoring
+
+**Result:** Infrastructure at $350/month serving 120+ users`,
+
+    // ALFA Project
+    portfolio_alfa_title: "Smart Document Matcher",
+    portfolio_alfa_short: "AI-powered system for automated accounting document processing",
+    portfolio_alfa_desc: `Automated matching system for scanned PDF documents (invoices, acts, UTD) with accounting registry entries from document management systems.
+
+**Problem:** Thousands of legacy scanned closing documents needed to be matched with electronic operation registries.
+
+**Solution:**
+• AI data extraction via Claude API (single 500+ line prompt)
+• OCR pipeline: GCP Vision batch (16 images/request) + Pytesseract
+• Fuzzy matching with registries via RapidFuzz
+• Handwritten accounting number recognition (Extended Thinking)
+
+**Key optimizations:**
+• Anthropic Batch API — 50% cost savings on Claude
+• Index lookup O(1) for exact matches
+• Parallel processing with semaphores`,
+
+    // Crypnal Project
+    portfolio_crypnal_title: "Crypto Whale Tracker",
+    portfolio_crypnal_short: "Real-time monitoring platform for large cryptocurrency trades",
+    portfolio_crypnal_desc: `Professional platform for tracking whale trades and liquidations in real-time across 8+ crypto exchanges.
+
+**Challenge:** Build an instant notification system for large trades for crypto traders.
+
+**Architecture:**
+• WebSocket server for real-time trade broadcasting
+• Multi-exchange connectors (Binance, Bybit, OKX, Coinbase, Hyperliquid)
+• Server-side filtering to reduce traffic
+• Redis for real-time aggregation and caching
+
+**Key features:**
+• 84+ React components with Vite build
+• Dual-threshold filtering system (whale/liquidation)
+• Telegram/Twitter bots for auto-posting alerts
+• Prometheus + Grafana monitoring
+• MongoDB TTL indexes for automatic data cleanup`,
     age: "27 years old",
     location_label: "Location",
     location: "Moscow",

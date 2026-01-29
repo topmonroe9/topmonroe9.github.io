@@ -1,0 +1,90 @@
+const portfolioProjects = [
+  {
+    id: 'apree-platform',
+    images: [
+      '/portfolio/apree-architecture.png',
+      '/portfolio/apree-analytics.png',
+      '/portfolio/apree-dam.png',
+    ],
+    techStack: [
+      'AWS',
+      'Next.js',
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Redis',
+      'Docker',
+      'Traefik',
+      'Lambda',
+      'S3',
+      'CloudFront',
+      'Cognito',
+    ],
+    links: {
+      demo: null,
+      github: null,
+    },
+    category: 'enterprise',
+    year: 2025,
+  },
+  {
+    id: 'alfa',
+    video: '/portfolio/alfa-video-ru.mp4',
+    images: [
+      '/portfolio/alfa-archive.png',
+      '/portfolio/alfa-processing.png',
+      '/portfolio/alfa-results.png',
+    ],
+    techStack: [
+      'FastAPI',
+      'Python',
+      'React',
+      'TypeScript',
+      'MongoDB',
+      'MinIO',
+      'Claude API',
+      'Docker',
+      'RapidFuzz',
+      'Google Cloud Vision',
+    ],
+    links: {
+      demo: null,
+      github: null,
+    },
+    category: 'ai-automation',
+    year: 2025,
+  },
+  {
+    id: 'crypnal',
+    images: [
+      '/portfolio/crypnal-1.png',
+      '/portfolio/crypnal-2.png',
+      '/portfolio/crypnal-3.png',
+      '/portfolio/crypnal-4.png',
+      '/portfolio/crypnal-5.png',
+      '/portfolio/crypnal-6.png',
+      '/portfolio/crypnal-7.png',
+    ],
+    // embedUrl: 'https://tradermap.io', // blocked by X-Frame-Options
+    techStack: [
+      'Node.js',
+      'React',
+      'WebSocket',
+      'MongoDB',
+      'Redis',
+      'BullMQ',
+      'Docker',
+      'Prometheus',
+      'Telegram API',
+      'Twitter API',
+    ],
+    links: {
+      demo: 'https://tradermap.io',
+      github: null,
+    },
+    category: 'fintech',
+    year: 2024,
+  },
+];
+
+export default portfolioProjects;
