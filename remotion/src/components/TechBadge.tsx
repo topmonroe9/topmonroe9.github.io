@@ -17,6 +17,20 @@ const techColors: Record<string, string> = {
   RapidFuzz: "#8B5CF6",
   React: "#61DAFB",
   TypeScript: "#3178C6",
+  // Apree project technologies
+  AWS: "#FF9900",
+  "Next.js": "#000000",
+  NestJS: "#E0234E",
+  PostgreSQL: "#336791",
+  Redis: "#DC382D",
+  Docker: "#2496ED",
+  Traefik: "#24A1C1",
+  Lambda: "#FF9900",
+  S3: "#569A31",
+  CloudFront: "#8C4FFF",
+  Cognito: "#DD344C",
+  MetaBase: "#509EE3",
+  "Google Workspace": "#4285F4",
 };
 
 export const TechBadge: React.FC<TechBadgeProps> = ({

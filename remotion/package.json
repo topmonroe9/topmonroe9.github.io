@@ -6,7 +6,10 @@
     "dev": "remotion studio",
     "build": "remotion render AlfaVideoRU out/alfa-video-ru.mp4 && remotion render AlfaVideoEN out/alfa-video-en.mp4",
     "build:ru": "remotion render AlfaVideoRU out/alfa-video-ru.mp4",
-    "build:en": "remotion render AlfaVideoEN out/alfa-video-en.mp4"
+    "build:en": "remotion render AlfaVideoEN out/alfa-video-en.mp4",
+    "build:apree": "remotion render ApreeVideoRU out/apree-video-ru.mp4 && remotion render ApreeVideoEN out/apree-video-en.mp4",
+    "build:apree-ru": "remotion render ApreeVideoRU out/apree-video-ru.mp4",
+    "build:apree-en": "remotion render ApreeVideoEN out/apree-video-en.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.242",

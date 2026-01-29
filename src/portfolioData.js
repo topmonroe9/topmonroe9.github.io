@@ -1,6 +1,7 @@
 const portfolioProjects = [
   {
     id: 'apree-platform',
+    video: '/portfolio/apree-video-ru.mp4',
     images: [
       '/portfolio/apree-architecture.png',
       '/portfolio/apree-analytics.png',
