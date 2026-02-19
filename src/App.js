@@ -307,6 +307,9 @@ function SkillsSection() {
         "GraphQL",
         "WebSockets",
         "Puppeteer",
+        "Microservices",
+        "Serverless",
+        "OAuth",
       ],
     },
     {
@@ -315,7 +318,7 @@ function SkillsSection() {
     },
     {
       title: strings.databases,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "NocoDB"],
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "NocoDB", "Metabase", "Custom BI"],
     },
     {
       title: strings.devops,
@@ -341,11 +344,7 @@ function SkillsSection() {
     },
     {
       title: strings.integrations,
-      skills: ["Stripe", "Google APIs", "Jira", "OAuth", "TG API"],
-    },
-    {
-      title: strings.analytics,
-      skills: ["Metabase", "Custom BI solutions"],
+      skills: ["Stripe", "Google APIs", "Jira", "TG API", "Agora", "Claude API", "Spotify API"],
     },
   ];
 
