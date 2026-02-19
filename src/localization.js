@@ -76,16 +76,16 @@ const localization = {
     print: "Печать",
 
     // Заголовки секций
-    job_title: "Team Lead Node.js / Head of IT",
+    job_title: "Senior Backend Developer Node.js / TypeScript",
     job_specs:
-      "Специализация: Back End / Full Stack разработка, техническое руководство & управление командой\nГрафик работы: полный день, удаленная работа",
+      "Специализация: Back End / Full Stack разработка\nФормат работы: полная занятость, удалённая работа, гибрид",
 
     summary_title: "Профессиональный профиль",
     motivation_title: "Что меня мотивирует",
     skills_title: "Навыки",
     achievements_title: "Ключевые достижения",
     case_studies_title: "Кейсы из карьеры",
-    experience_title: "Опыт работы — 6 лет 10 месяцев",
+    experience_title: "Опыт работы — 7 лет",
     education_title: "Образование и профессиональное развитие",
     about_title: "Обо мне",
 
@@ -97,6 +97,7 @@ const localization = {
     devops: "DevOps и инфраструктура",
     integrations: "Интеграции",
     analytics: "Аналитика",
+    engineering_practices: "Инженерные практики",
     soft_skills: "Софт-скилы",
     payment_systems: "Платежные системы",
 
@@ -104,7 +105,7 @@ const localization = {
     russian: "Русский",
     english: "Английский",
     native: "Родной",
-    advanced: "C1 — Продвинутый",
+    advanced: "B2 — Средне-продвинутый",
 
     // Софт-скилы
     client_communication: "Коммуникация с клиентами",
@@ -122,7 +123,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Tech Lead / Head of IT с 6+ годами опыта в разработке и 3+ годами в управлении командами. Строил IT-инфраструктуру и команды с нуля, запускал высоконагруженные системы (15,000+ транзакций в день). Сильная сторона — превращать хаос в работающие процессы: мигрировал компанию с 60 Google-таблиц на единую BI-платформу, сократил время формирования отчётов с часов до минут.\n\nТехнический стек: Node.js, NestJS, PostgreSQL, AWS. Дополнительно: Python, DevOps, построение аналитических систем.",
+      "Senior Backend Developer с 7 годами опыта в Node.js/TypeScript. Строю fullstack-продукты с нуля и довожу до прода: парсеры, веб-приложения, real-time платформы, ETL-пайплайны, интеграции с внешними API.\n\nЖивой продукт: tradermap.io — real-time платформа с WebSocket-интеграцией 8 бирж, AI Trading Agent, Grafana/Prometheus мониторинг. 2.5 года международного фриланса (Upwork 81% Job Success): fintech, healthcare, crypto.\n\nОсновной стек: NestJS, PostgreSQL, MongoDB, Redis, AWS. Дополнительно: опыт тимлидерства (команды до 5 человек), построение BI-систем на Metabase.",
 
     motivation_content:
       "Я увлечен созданием сложных технических решений, которые для конечных пользователей выглядят простыми и интуитивно понятными. Нет ничего более удовлетворяющего, чем создание комплексных систем, с которыми люди взаимодействуют без усилий, даже не догадываясь о сложной архитектуре, скрытой под поверхностью.\n\nЯ нахожу огромное удовлетворение в менторинге младших разработчиков и наблюдении за их профессиональным ростом. Делиться знаниями и видеть, как человек эволюционирует от борьбы с базовыми концепциями до самостоятельного решения сложных задач — невероятно вдохновляющий опыт. Эта приверженность развитию команды помогла мне создавать высокоэффективные коллективы, которые стабильно показывают исключительные результаты.",
@@ -160,103 +161,93 @@ const localization = {
       "Результат: Клиент получил ценное понимание процесса разработки, наши отношения значительно улучшились, и мы установили более структурированную процедуру управления изменениями, которая принесла пользу обеим сторонам.",
 
     // Опыт работы
-    job1_title: "Head of IT",
-    job1_date: "Март 2025 — Декабрь 2025 (10 месяцев)",
-    job1_company: "Digital-агентство (Проектная работа)",
-    job1_location: "Москва",
-    job1_stack: "Backend: Node.js, NestJS, Python | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch) | Analytics: Metabase | DevOps: Docker, Git, CI/CD | Monitoring: Grafana, Prometheus",
-    job1_section1_title: "ПОСТРОЕНИЕ IT-ИНФРАСТРУКТУРЫ С НУЛЯ:",
-    job1_bullet1: "Спроектировал и реализовал полную IT-инфраструктуру компании на AWS",
-    job1_bullet2: "Архитектура высокой доступности с обработкой 1000+ транзакций ежедневно",
-    job1_bullet3: "Внедрил резервное копирование и disaster recovery процедуры",
-    job1_section2_title: "УПРАВЛЕНИЕ КОМАНДОЙ:",
-    job1_bullet4: "Сформировал и управлял командой из 5 специалистов (сисадмин, дата-аналитик, фулстек-разработчик, разработчик парсеров)",
-    job1_bullet5: "Внедрил agile-практики: ежедневные stand-ups, sprint planning, ретроспективы",
-    job1_bullet6: "Организовал процессы через ClickUp с четкими SLA и метриками эффективности",
-    job1_section3_title: "РАЗРАБОТКА ВНУТРЕННИХ ПРОДУКТОВ:",
-    job1_bullet7: "Система аналитики продаж в реальном времени для отдела из 80+ операторов",
-    job1_bullet8: "AI-powered система автоматизации контент-процессов",
-    job1_bullet9: "Внутренние инструменты: кастомная ATS, аналитическая платформа, контент-система",
-    job1_section4_title: "СИСТЕМЫ АНАЛИТИКИ И BI:",
-    job1_bullet10: "Разработал комплексную BI-платформу на Metabase для 120+ пользователей",
-    job1_bullet11: "Внедрил автоматизированные отчеты и алерты для ключевых метрик",
-    job1_section5_title: "КЛЮЧЕВЫЕ РЕЗУЛЬТАТЫ:",
-    job1_bullet12: "Миграция 100% операций с ручных таблиц на автоматизированные системы",
-    job1_bullet13: "Снижение времени на формирование отчетов с часов до минут",
-    job1_bullet14: "Создание масштабируемой инфраструктуры для роста компании с 80 до 120+ сотрудников",
+    job1_title: "Fullstack-разработчик / AI Engineer",
+    job1_date: "Январь 2026 — Февраль 2026 (2 месяца)",
+    job1_company: "АльфаИнфоТех (подрядная разработка)",
+    job1_description: "Разработка AI-решения для автоматизации налогового документооборота крупной энергетической компании федерального уровня.",
+    job1_stack: "Node.js, TypeScript, Python, REST API, AI, LLM",
+    job1_bullet1: "Автоматическое сопоставление десятков тысяч сканированных закрывающих документов (УПД, счета-фактуры, акты) с электронными реестрами операций СЭД",
+    job1_bullet2: "AI-пайплайн: Anthropic Claude API для извлечения структурированных данных из сканов + fuzzy matching для сопоставления с реестрами",
+    job1_bullet3: "Обработка нестандартных форматов документов, работа с зашумлёнными сканами",
+    job1_bullet4: "Работа с конфиденциальными финансовыми данными федерального уровня",
 
-    job2_title: "Fullstack-разработчик",
-    job2_date: "Июнь 2022 — Декабрь 2024 (2 года 7 месяцев)",
-    job2_company: "Индивидуальное предпринимательство / частная практика / фриланс",
-    job2_description: "Backend разработка и технический консалтинг для клиентов из fintech, healthcare и e-commerce секторов на Upwork. Создание платежных систем, dashboards в реальном времени и кастомных CRM решений.",
-    job2_stack: "Технологии: Node.js, NestJS, Python, PostgreSQL, MongoDB, Redis, AWS, Docker",
-    job2_projects_title: "Ключевые проекты:",
-    job2_bullet1: "Платформа аналитики платежей с обработкой 10,000+ транзакций ежедневно. Сократил время отклика API на 40% через оптимизацию кэширования.",
-    job2_bullet2: "Real-time трекер криптовалютного портфеля с WebSocket интеграциями для 50+ торговых пар.",
-    job2_bullet3: "3 кастомные CRM-системы, улучшившие эффективность workflow клиентов и управление данными.",
-    job2_bullet4: "HIPAA-compliant стартап для докторов и пациентов на американский рынок (serverless Firebase).",
-    job2_bullet5: "Технические аудиты и DevOps консалтинг для стартапов на ранних стадиях, включая ревью AWS инфраструктуры.",
-    job2_bullet6: "Интеграции платежей (Stripe), реализация OAuth, подключение сторонних API.",
+    job2_title: "Lead Backend Developer / Head of IT",
+    job2_date: "Март 2025 — Декабрь 2025 (10 месяцев)",
+    job2_company: "Digital-агентство (управление контентом и монетизация креаторов)",
+    job2_location: "Москва",
+    job2_description: "Спроектировал и реализовал backend-архитектуру платформы на Node.js/NestJS с нуля.",
+    job2_stack: "Backend: Node.js, NestJS, Python (ETL) | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch, ECR, SNS) | DevOps: Docker, GitHub CI/CD, Traefik | Analytics: Metabase",
+    job2_bullet1: "CRM-система (PostgreSQL, Redis для кеширования)",
+    job2_bullet2: "ETL-пайплайны на Python для обработки данных из внешних источников и формирования витрин данных",
+    job2_bullet3: "Система парсинга данных с внешних платформ",
+    job2_bullet4: "BI-платформа на Metabase для 120+ пользователей с кастомными агрегационными функциями",
+    job2_bullet5: "Контент-система с хранилищем на S3",
+    job2_bullet6: "AWS: EC2 (несколько инстансов по типу нагрузки), RDS, S3, Lambda, CloudWatch, ECR, SNS",
+    job2_bullet7: "Blue-green deployment через Traefik с zero downtime",
+    job2_bullet8: "CI/CD через GitHub Actions: автоматическая сборка, тесты, деплой в ECR",
+    job2_bullet9: "Мониторинг: CloudWatch дашборды + SNS алерты в Discord/Telegram/Email",
+    job2_bullet10: "Безопасность: AWS tunneling, Google Workspace policies, VPN (Outline)",
+    job2_bullet11: "Спроектировал архитектуру БД (PostgreSQL) для всей компании",
+    job2_bullet12: "Миграция 140 человек с 60+ Google Sheets на централизованную нормализованную БД",
+    job2_bullet13: "Сократил расчёт зарплат 60 операторов с ~2 суток до 1 часа",
+    job2_bullet14: "Снизил время формирования отчётов с нескольких часов до минут",
+    job2_bullet15: "Создал масштабируемую инфраструктуру для роста компании с 80 до 120+ сотрудников",
 
-    job3_title: "Технический директор (CTO)",
+    job3_title: "CTO / Lead Developer",
     job3_date: "Январь 2024 — Март 2025 (1 год 3 месяца)",
-    job3_company: "Производственная компания",
-    job3_industry: "Товары народного потребления (непищевые)\n• Одежда, обувь, аксессуары, текстиль (продвижение, оптовая торговля)\n• Одежда, обувь, аксессуары, текстиль (производство)",
-    job3_description: "Привлечён для цифровой трансформации производственной компании со штатом 100+ человек.",
-    job3_bullet1:
-      "Спроектировал и внедрил систему автоматизации учёта и планирования производства, существенно сократив время на рутинные операции.",
-    job3_bullet2:
-      "Разработал IT-решение для учета сдельной заработной платы, полностью устранившее необходимость ручной обработки табелей.",
-    job3_bullet3:
-      "Разработал решение для контроля качества, снизившее процент брака с 15% до 2%.",
-    job3_bullet4:
-      "Автоматизировал процессы, снизив операционные издержки и повысив производительность.",
-    job3_bullet5:
-      "Интегрировал систему мониторинга цепочки поставок для оперативного реагирования на сбои.",
+    job3_company: "Производственная компания (одежда/текстиль)",
+    job3_description: "Спроектировал архитектуру и разработал веб-приложения для автоматизации производственного предприятия на 100+ человек. До прихода — весь учёт на бумаге и калькуляторах.",
+    job3_bullet1: "Создал единую базу данных (PostgreSQL) для сведения всех производственных процессов",
+    job3_bullet2: "Разработал систему real-time учёта сдельной зарплаты для 100+ сотрудников",
+    job3_bullet3: "Автоматизировал формирование отчётов и планирование производства",
+    job3_bullet4: "Обеспечил руководству real-time видимость незавершённого производства на каждом этапе",
+    job3_bullet5: "Интегрировал систему мониторинга цепочки поставок",
 
-    job4_title: "Backend Engineer, Team Lead",
-    job4_date: "Январь 2021 — Май 2022 (1 год 5 месяцев)",
-    job4_company: "Anoda",
-    job4_stack: "Стек: AWS, NestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
-    job4_bullet1:
-      "Руководил командой из 5 разработчиков, успешно запустивших 3 масштабных проекта с нуля в установленные сроки.",
-    job4_bullet2:
-      "Спроектировал и разработал RESTful и GraphQL API для высоконагруженных сервисов с пиковой нагрузкой до 5000 запросов в минуту.",
-    job4_bullet3:
-      "Интегрировал платежную систему Stripe с обработкой подписок и рекуррентных платежей, повысив конверсию платежей на 12%.",
-    job4_bullet4:
-      "Наставлял джуниор-разработчиков, что привело к повышению их эффективности на 30% в течение первых 6 месяцев.",
-    job4_bullet5:
-      "Управлял отношениями с клиентами и их ожиданиями, используя сильные коммуникационные навыки для согласования объема работ и сроков.",
-    job4_projects:
-      "Проекты моей команды с нуля:\n• Augmento — платформа для европейского арт-рынка с 3D/AR технологиями для торговли предметами искусства\n• UseKyleApp — музыкальное приложение для американского рынка, создающее новую модель взаимодействия диджеев с аудиторией\n• CareGave — платформа для здравоохранения США, соединяющая медперсонал с клиниками",
+    job4_title: "Fullstack-разработчик",
+    job4_date: "Июнь 2022 — Декабрь 2024 (2 года 7 месяцев)",
+    job4_company: "Фриланс / Upwork (81% Job Success)",
+    job4_description: "Backend-разработка и технический консалтинг для международных клиентов из fintech, healthcare, crypto. Полный цикл: оценка проекта, архитектура, разработка, деплой, поддержка.",
+    job4_stack: "Node.js, NestJS, TypeScript, Python, PostgreSQL, MongoDB, Redis, AWS, GCP, Firebase, Docker, React, WebSocket, REST API, GraphQL, Grafana, Prometheus, Stripe, Agora",
+    job4_bullet1: "TRADERMAP.IO — real-time платформа мониторинга крупных криптовалютных сделок. Единственный разработчик, fullstack",
+    job4_bullet2: "Backend на Node.js: WebSocket-интеграция с 8 криптобиржами, обработка и агрегация данных в реальном времени",
+    job4_bullet3: "Модули: RSI Heatmap, Whale Trades и Liquidations, Unusual Activity, Altcoin Indexes, ETF данные",
+    job4_bullet4: "AI Trading Agent: алгоритм Ichimoku для принятия решений, RAG + Score для памяти, интеграция новостных потоков, self-reflection pipeline",
+    job4_bullet5: "Кеширование и управление состоянием через Redis",
+    job4_bullet6: "Мониторинг: Grafana + Prometheus (метрики: время ответа REST/WebSocket, нагрузка Redis, здоровье соединений с биржами)",
+    job4_bullet7: "MEDPAL — HIPAA-compliant платформа для врачей и пациентов (американский рынок). Серверлесс архитектура на Firebase",
+    job4_bullet8: "Шифрование данных в базе для соответствия HIPAA, tokenized search по зашифрованным данным",
+    job4_bullet9: "AMBASSADOR.AI — оптимизация бэкенда SaaS для ресторанного бизнеса. Кеширование на Redis, балансировка WebSocket-трафика",
+    job4_bullet10: "Также: кастомные CRM-системы (NDA), технические аудиты AWS-инфраструктуры, интеграции Stripe, OAuth",
 
-    job5_title: "FullStack Engineer",
-    job5_date: "Январь 2020 — Январь 2021 (1 год 1 месяц)",
-    job5_company: "MK 3",
-    job5_location: "Москва, mk3.ru",
-    job5_industry:
-      "Строительство, недвижимость, эксплуатация, проектирование\n• Строительство коммерческих объектов (торговые площади, офисные здания)\n• Архитектура, проектирование",
-    job5_bullet1:
-      "Разработал плагины для ADOBE AutoCad и Revit, повысившие скорость проектирования на 40% и сократившие количество ошибок на 60%.",
-    job5_bullet2:
-      "Создал внутреннюю CRM-систему для управления лицензиями, оптимизировавшую процесс на 75% и обеспечившую аналитику использования продуктов.",
-    job5_bullet3:
-      "Спроектировал и реализовал корпоративный веб-сайт компании, увеличивший приток клиентов через онлайн-каналы на 35%.",
-    job5_bullet4:
-      "Разработал адаптивные фронтенд-интерфейсы, улучшившие пользовательский опыт и сократившие время обучения новых пользователей на 50%.",
+    job5_title: "Backend Engineer -> Team Lead",
+    job5_date: "Январь 2021 — Май 2022 (1 год 5 месяцев)",
+    job5_company: "Anoda",
+    job5_description: "Архитектура и разработка бэкенда для трёх проектов с нуля, все запущены в срок. За 6 месяцев вырос до Team Lead, руководил командой из 5 человек.",
+    job5_stack: "Node.js, NestJS, TypeScript, PostgreSQL, MongoDB, AWS, REST API, GraphQL, Stripe, WebSocket, Code Review",
+    job5_bullet1: "Спроектировал RESTful и GraphQL API для сервисов с real-time нагрузкой",
+    job5_bullet2: "Интегрировал Stripe с подписками и рекуррентными платежами",
+    job5_bullet3: "Менторинг джуниор-разработчиков",
+    job5_projects: "Проекты (все с нуля):\n• Augmento — маркетплейс для европейского арт-рынка с AR. REST API, подписочная модель, интеграция с 3D/AR-стеком\n• UseKyleApp — музыкальная платформа с real-time биддинг-системой. Интеграция Spotify/Apple Music API, Stripe payments, WebSocket\n• CareGave — платформа для здравоохранения США",
 
-    job6_title: "Backend Engineer",
-    job6_date: "Март 2019 — Декабрь 2019 (10 месяцев)",
+    job6_title: "BackEnd Engineer",
+    job6_date: "Февраль 2020 — Январь 2021 (1 год)",
     job6_company: "InterLogistics",
-    job6_bullet1:
-      "Разработал систему автоматизированных ботов для участия в онлайн-аукционах Copart, передающих данные в реальном времени для принятия решений о покупке автомобилей.",
-    job6_bullet2:
-      "Создал комплексные парсеры с использованием Puppeteer, извлекающие и структурирующие данные с более чем 200 сайтов логистических компаний-конкурентов с точностью 98%.",
-    job6_bullet3:
-      "Реализовал полную экстракцию и систематизацию базы данных listex.info, создав ценный информационный ресурс для компании.",
-    job6_bullet4:
-      "Спроектировал систему для отслеживания полной цепочки логистики автомобилей от аукциона до конечного пункта, что позволило оптимизировать транспортные маршруты и снизить издержки.",
+    job6_description: "Разработка систем автоматизации для логистической компании (импорт автомобилей с аукционов).",
+    job6_stack: "Node.js, Puppeteer, MongoDB, REST API",
+    job6_bullet1: "Разработал систему автоматизированных ботов для онлайн-аукционов Copart (США и ОАЭ) — передача данных в реальном времени для принятия решений о покупке",
+    job6_bullet2: "Создал парсеры на Puppeteer, извлекающие данные с 200+ сайтов логистических компаний с точностью 98%",
+    job6_bullet3: "Спроектировал систему отслеживания полной цепочки логистики автомобилей",
+
+    job7_title: "FullStack Engineer",
+    job7_date: "Март 2019 — Январь 2020 (11 месяцев)",
+    job7_company: "MK 3",
+    job7_location: "Москва, mk3.ru",
+    job7_industry: "Строительство, недвижимость, эксплуатация, проектирование\n• Строительство коммерческих объектов (торговые площади, офисные здания)\n• Архитектура, проектирование",
+    job7_description: "Автоматизация процессов в проектном бюро (строительство, архитектура, проектирование).",
+    job7_stack: "JavaScript, Node.js, HTML, CSS",
+    job7_bullet1: "Разработал корпоративный сайт компании",
+    job7_bullet2: "Создал внутреннюю CRM-систему для управления лицензиями",
+    job7_bullet3: "Разработал адаптивные фронтенд-интерфейсы для внутренних инструментов",
 
     // Образование
     education_level: "Высшее",
@@ -287,7 +278,7 @@ const localization = {
 
     // О себе
     about_me:
-      "Мой основной технологический стек включает Node.js, AWS, NestJS, MongoDB/PostgreSQL и React с TypeScript. В работе активно использую Docker, RabbitMQ, Redis и WebSockets. У меня есть опыт интеграции с платежными системами (Stripe), написания автоматизированных скриптов (Jira Automations, Puppeteer) и оптимизации бэкенда для высоконагруженных сервисов.\n\nТри года я работал в IT-команде как разработчик, а последний год управляю производственным процессом, чтобы получить управленческий опыт. Этот двойной опыт позволяет мне преодолеть разрыв между технической реализацией и потребностями бизнеса. Параллельно продолжаю выполнять частные заказы на разработку, чтобы поддерживать технические навыки на высоком уровне.\n\nЯ всегда стремлюсь к результату и беру на себя ответственность за процессы, в которых участвую. Я убежден, что каждый член команды должен быть вовлечен и работать на общий успех. Я уверен, что любые задачи имеют решения — вопрос лишь в поиске верного подхода. Обожаю разбираться в сложных вещах и доводить их до логичного завершения.",
+      "Строю fullstack-продукты с нуля и довожу до прода. Кайфую от того чтобы взять идею, спроектировать архитектуру, собрать и запустить — а потом видеть как этим пользуются люди.\n\n6+ лет на Node.js/TypeScript: парсеры, веб приложения, real-time платформы, ETL-пайплайны, интеграции с внешними API.\n\nЖивой продукт: tradermap.io — real-time платформа с WebSocket-интеграцией 8 бирж, AI Trading Agent, Grafana/Prometheus мониторинг.\n\n2.5 года международного фриланса (Upwork 81% Job Success): fintech, healthcare, crypto — каждый проект от архитектуры до деплоя в одиночку.\n\nОсновной стек: NestJS, PostgreSQL, MongoDB, Redis, AWS.\nДополнительно: опыт тимлидерства (команды до 5 человек), построение BI-систем на Metabase.",
   },
 
   en: {
@@ -367,16 +358,16 @@ const localization = {
     print: "Print",
 
     // Заголовки секций
-    job_title: "Team Lead Node.js / Head of IT",
+    job_title: "Senior Backend Developer Node.js / TypeScript",
     job_specs:
-      "Specialization: Full Stack Development, Technical Leadership\nWork schedule: Full-time, Remote work",
+      "Specialization: Back End / Full Stack Development\nWork format: Full-time, Remote, Hybrid",
 
     summary_title: "Professional Profile",
     motivation_title: "What Drives Me",
     skills_title: "Skills",
     achievements_title: "Key Achievements",
     case_studies_title: "Career Case Studies",
-    experience_title: "Work Experience — 6 years 10 months",
+    experience_title: "Work Experience — 7 years",
     education_title: "Education & Professional Development",
     about_title: "About Me",
 
@@ -388,6 +379,7 @@ const localization = {
     devops: "DevOps & Infrastructure",
     integrations: "Integrations",
     analytics: "Analytics",
+    engineering_practices: "Engineering Practices",
     soft_skills: "Soft Skills",
     payment_systems: "Payment Systems",
 
@@ -395,7 +387,7 @@ const localization = {
     russian: "Russian",
     english: "English",
     native: "Native",
-    advanced: "C1 — Advanced",
+    advanced: "B2 — Upper Intermediate",
 
     // Софт-скилы
     client_communication: "Client Communication",
@@ -413,7 +405,7 @@ const localization = {
 
     // Основные секции
     summary_content:
-      "Tech Lead / Head of IT with 6+ years of development experience and 3+ years in team management. Built IT infrastructure and teams from scratch, launched high-load systems (15,000+ transactions per day). Core strength — turning chaos into working processes: migrated a company from 60 Google Sheets to a unified BI platform, reduced report generation time from hours to minutes.\n\nTech stack: Node.js, NestJS, PostgreSQL, AWS. Additionally: Python, DevOps, building analytics systems.",
+      "Senior Backend Developer with 7 years of experience in Node.js/TypeScript. Building fullstack products from scratch to production: parsers, web applications, real-time platforms, ETL pipelines, external API integrations.\n\nLive product: tradermap.io — real-time platform with WebSocket integration for 8 exchanges, AI Trading Agent, Grafana/Prometheus monitoring. 2.5 years of international freelancing (Upwork 81% Job Success): fintech, healthcare, crypto.\n\nCore stack: NestJS, PostgreSQL, MongoDB, Redis, AWS. Additionally: team leadership experience (teams up to 5 people), building BI systems on Metabase.",
 
     motivation_content:
       "I'm passionate about creating sophisticated technical solutions that appear seamless to end-users. There's nothing more satisfying than building complex systems that people interact with effortlessly, completely unaware of the intricate architecture beneath the surface.\n\nI find tremendous fulfillment in mentoring junior developers and watching their growth. Sharing knowledge and seeing someone evolve from struggling with basic concepts to independently solving complex problems is incredibly rewarding. This commitment to team development has helped me build high-performing teams that consistently deliver exceptional results.",
@@ -450,103 +442,93 @@ const localization = {
       "Outcome: The client gained valuable insight into the development process, our relationship improved significantly, and we established a more structured change management procedure that benefited both parties.",
 
     // Опыт работы
-    job1_title: "Head of IT",
-    job1_date: "March 2025 — December 2025 (10 months)",
-    job1_company: "Digital Agency (Project Work)",
-    job1_location: "Moscow",
-    job1_stack: "Backend: Node.js, NestJS, Python | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch) | Analytics: Metabase | DevOps: Docker, Git, CI/CD | Monitoring: Grafana, Prometheus",
-    job1_section1_title: "BUILDING IT INFRASTRUCTURE FROM SCRATCH:",
-    job1_bullet1: "Designed and implemented complete company IT infrastructure on AWS",
-    job1_bullet2: "High-availability architecture processing 1000+ transactions daily",
-    job1_bullet3: "Implemented backup and disaster recovery procedures",
-    job1_section2_title: "TEAM MANAGEMENT:",
-    job1_bullet4: "Built and managed a team of 5 specialists (sysadmin, data analyst, fullstack developer, parser developer)",
-    job1_bullet5: "Implemented agile practices: daily stand-ups, sprint planning, retrospectives",
-    job1_bullet6: "Organized processes through ClickUp with clear SLAs and efficiency metrics",
-    job1_section3_title: "INTERNAL PRODUCT DEVELOPMENT:",
-    job1_bullet7: "Real-time sales analytics system for 80+ operators",
-    job1_bullet8: "AI-powered content process automation system",
-    job1_bullet9: "Internal tools: custom ATS, analytics platform, content system",
-    job1_section4_title: "ANALYTICS & BI SYSTEMS:",
-    job1_bullet10: "Developed comprehensive BI platform on Metabase for 120+ users",
-    job1_bullet11: "Implemented automated reports and alerts for key metrics",
-    job1_section5_title: "KEY RESULTS:",
-    job1_bullet12: "Migrated 100% of operations from manual spreadsheets to automated systems",
-    job1_bullet13: "Reduced report generation time from hours to minutes",
-    job1_bullet14: "Created scalable infrastructure for company growth from 80 to 120+ employees",
+    job1_title: "Fullstack Developer / AI Engineer",
+    job1_date: "January 2026 — February 2026 (2 months)",
+    job1_company: "AlfaInfoTech (contract development)",
+    job1_description: "Development of AI solution for automating tax document workflow for a major federal-level energy company.",
+    job1_stack: "Node.js, TypeScript, Python, REST API, AI, LLM",
+    job1_bullet1: "Automated matching of tens of thousands of scanned closing documents (invoices, acts) with electronic operation registries",
+    job1_bullet2: "AI pipeline: Anthropic Claude API for structured data extraction from scans + fuzzy matching for registry reconciliation",
+    job1_bullet3: "Processing non-standard document formats, working with noisy scans",
+    job1_bullet4: "Working with confidential federal-level financial data",
 
-    job2_title: "Fullstack Developer",
-    job2_date: "June 2022 — December 2024 (2 years 7 months)",
-    job2_company: "Freelance",
-    job2_description: "Backend development and technical consulting for clients in fintech, healthcare and e-commerce sectors on Upwork. Building payment systems, real-time dashboards and custom CRM solutions.",
-    job2_stack: "Technologies: Node.js, NestJS, Python, PostgreSQL, MongoDB, Redis, AWS, Docker",
-    job2_projects_title: "Key projects:",
-    job2_bullet1: "Payment analytics platform processing 10,000+ transactions daily. Reduced API response time by 40% through caching optimization.",
-    job2_bullet2: "Real-time cryptocurrency portfolio tracker with WebSocket integrations for 50+ trading pairs.",
-    job2_bullet3: "3 custom CRM systems that improved client workflow efficiency and data management.",
-    job2_bullet4: "HIPAA-compliant startup for doctors and patients for US market (serverless Firebase).",
-    job2_bullet5: "Technical audits and DevOps consulting for early-stage startups, including AWS infrastructure reviews.",
-    job2_bullet6: "Payment integrations (Stripe), OAuth implementation, third-party API connections.",
+    job2_title: "Lead Backend Developer / Head of IT",
+    job2_date: "March 2025 — December 2025 (10 months)",
+    job2_company: "Digital Agency (content management and creator monetization)",
+    job2_location: "Moscow",
+    job2_description: "Designed and implemented backend architecture of the platform on Node.js/NestJS from scratch.",
+    job2_stack: "Backend: Node.js, NestJS, Python (ETL) | Databases: PostgreSQL, MongoDB, Redis, NocoDB | Cloud: AWS (EC2, RDS, S3, Lambda, CloudWatch, ECR, SNS) | DevOps: Docker, GitHub CI/CD, Traefik | Analytics: Metabase",
+    job2_bullet1: "CRM system (PostgreSQL, Redis caching)",
+    job2_bullet2: "ETL pipelines in Python for external data processing and data mart generation",
+    job2_bullet3: "Data parsing system from external platforms",
+    job2_bullet4: "BI platform on Metabase for 120+ users with custom aggregation functions",
+    job2_bullet5: "Content system with S3 storage",
+    job2_bullet6: "AWS: EC2 (multiple instances by load type), RDS, S3, Lambda, CloudWatch, ECR, SNS",
+    job2_bullet7: "Blue-green deployment via Traefik with zero downtime",
+    job2_bullet8: "CI/CD via GitHub Actions: automated build, tests, deploy to ECR",
+    job2_bullet9: "Monitoring: CloudWatch dashboards + SNS alerts to Discord/Telegram/Email",
+    job2_bullet10: "Security: AWS tunneling, Google Workspace policies, VPN (Outline)",
+    job2_bullet11: "Designed database architecture (PostgreSQL) for the entire company",
+    job2_bullet12: "Migrated 140 people from 60+ Google Sheets to centralized normalized database",
+    job2_bullet13: "Reduced payroll calculation for 60 operators from ~2 days to 1 hour",
+    job2_bullet14: "Reduced report generation time from several hours to minutes",
+    job2_bullet15: "Built scalable infrastructure for company growth from 80 to 120+ employees",
 
-    job3_title: "Chief Technology Officer (CTO)",
+    job3_title: "CTO / Lead Developer",
     job3_date: "January 2024 — March 2025 (1 year 3 months)",
-    job3_company: "Manufacturing Company",
-    job3_industry: "Consumer goods (non-food)\n• Clothing, footwear, accessories, textiles (wholesale trade)\n• Clothing, footwear, accessories, textiles (manufacturing)",
-    job3_description: "Brought in for digital transformation of a manufacturing company with 100+ employees.",
-    job3_bullet1:
-      "Designed and implemented an accounting and production planning automation system, significantly reducing time spent on routine operations.",
-    job3_bullet2:
-      "Developed an IT solution for piece-rate payroll accounting, completely eliminating the need for manual timesheet processing.",
-    job3_bullet3:
-      "Developed a quality control solution that reduced defect rates from 15% to 2%.",
-    job3_bullet4:
-      "Automated processes, reducing operational costs and increasing productivity.",
-    job3_bullet5:
-      "Integrated a supply chain monitoring system for rapid response to disruptions.",
+    job3_company: "Manufacturing Company (clothing/textiles)",
+    job3_description: "Designed architecture and developed web applications for automating a manufacturing enterprise with 100+ employees. Before arrival — all accounting on paper and calculators.",
+    job3_bullet1: "Created unified database (PostgreSQL) for consolidating all production processes",
+    job3_bullet2: "Developed real-time piece-rate payroll tracking system for 100+ employees",
+    job3_bullet3: "Automated report generation and production planning",
+    job3_bullet4: "Provided management with real-time visibility into work-in-progress at every stage",
+    job3_bullet5: "Integrated supply chain monitoring system",
 
-    job4_title: "Backend Engineer, Team Lead",
-    job4_date: "January 2021 — May 2022 (1 year 5 months)",
-    job4_company: "Anoda",
-    job4_stack: "Stack: AWS, NestJS, MongoDB, SQL, RestAPI, GraphQL, Stripe.",
-    job4_bullet1:
-      "Led a team of 5 developers who successfully launched 3 large-scale projects from scratch within deadlines.",
-    job4_bullet2:
-      "Designed and developed RESTful and GraphQL APIs for high-load services with peak loads of up to 5000 requests per minute.",
-    job4_bullet3:
-      "Integrated Stripe payment system with subscription and recurring payment processing, increasing payment conversion by 12%.",
-    job4_bullet4:
-      "Mentored junior developers, leading to a 30% increase in their efficiency during the first 6 months.",
-    job4_bullet5:
-      "Managed client relationships and expectations, utilizing strong communication skills to negotiate scope and timelines.",
-    job4_projects:
-      "Projects built by my team from scratch:\n• Augmento — European art market platform with 3D/AR technologies for art trading\n• UseKyleApp — Music app for US market creating new DJ-audience interaction model\n• CareGave — US healthcare platform connecting medical staff with clinics",
+    job4_title: "Fullstack Developer",
+    job4_date: "June 2022 — December 2024 (2 years 7 months)",
+    job4_company: "Freelance / Upwork (81% Job Success)",
+    job4_description: "Backend development and technical consulting for international clients in fintech, healthcare, crypto. Full cycle: project estimation, architecture, development, deployment, support.",
+    job4_stack: "Node.js, NestJS, TypeScript, Python, PostgreSQL, MongoDB, Redis, AWS, GCP, Firebase, Docker, React, WebSocket, REST API, GraphQL, Grafana, Prometheus, Stripe, Agora",
+    job4_bullet1: "TRADERMAP.IO — real-time monitoring platform for large cryptocurrency trades. Sole developer, fullstack",
+    job4_bullet2: "Node.js backend: WebSocket integration with 8 crypto exchanges, real-time data processing and aggregation",
+    job4_bullet3: "Modules: RSI Heatmap, Whale Trades & Liquidations, Unusual Activity, Altcoin Indexes, ETF data",
+    job4_bullet4: "AI Trading Agent: Ichimoku algorithm for decisions, RAG + Score for memory, news feed integration, self-reflection pipeline",
+    job4_bullet5: "Caching and state management via Redis",
+    job4_bullet6: "Monitoring: Grafana + Prometheus (metrics: REST/WebSocket response time, Redis load, exchange connection health)",
+    job4_bullet7: "MEDPAL — HIPAA-compliant platform for doctors and patients (US market). Serverless architecture on Firebase",
+    job4_bullet8: "Data encryption for HIPAA compliance, tokenized search on encrypted data",
+    job4_bullet9: "AMBASSADOR.AI — backend optimization for restaurant SaaS. Redis caching, WebSocket traffic balancing",
+    job4_bullet10: "Also: custom CRM systems (NDA), AWS infrastructure audits, Stripe & OAuth integrations",
 
-    job5_title: "FullStack Engineer",
-    job5_date: "January 2020 — January 2021 (1 year 1 month)",
-    job5_company: "MK 3",
-    job5_location: "Moscow, mk3.ru",
-    job5_industry:
-      "Construction, real estate, operations, design\n• Commercial property construction (retail spaces, office buildings)\n• Architecture, design",
-    job5_bullet1:
-      "Developed plugins for ADOBE AutoCad and Revit that increased design speed by 40% and reduced errors by 60%.",
-    job5_bullet2:
-      "Created an internal CRM system for license management that streamlined the process by 75% and provided product usage analytics.",
-    job5_bullet3:
-      "Designed and implemented the company's corporate website, increasing client acquisitions through online channels by 35%.",
-    job5_bullet4:
-      "Built responsive front-end interfaces that improved user experience and reduced training time for new users by 50%.",
+    job5_title: "Backend Engineer -> Team Lead",
+    job5_date: "January 2021 — May 2022 (1 year 5 months)",
+    job5_company: "Anoda",
+    job5_description: "Architecture and backend development for three projects from scratch, all launched on time. Grew to Team Lead in 6 months, managed a team of 5.",
+    job5_stack: "Node.js, NestJS, TypeScript, PostgreSQL, MongoDB, AWS, REST API, GraphQL, Stripe, WebSocket, Code Review",
+    job5_bullet1: "Designed RESTful and GraphQL APIs for services with real-time load",
+    job5_bullet2: "Integrated Stripe with subscriptions and recurring payments",
+    job5_bullet3: "Mentored junior developers",
+    job5_projects: "Projects (all from scratch):\n• Augmento — marketplace for European art market with AR. REST API, subscription model, 3D/AR stack integration\n• UseKyleApp — music platform with real-time bidding system. Spotify/Apple Music API integration, Stripe payments, WebSocket\n• CareGave — US healthcare platform",
 
-    job6_title: "Backend Engineer",
-    job6_date: "March 2019 — December 2019 (10 months)",
+    job6_title: "BackEnd Engineer",
+    job6_date: "February 2020 — January 2021 (1 year)",
     job6_company: "InterLogistics",
-    job6_bullet1:
-      "Developed automated bot system for participating in Copart online auctions, transmitting real-time data to the office for purchase decision-making.",
-    job6_bullet2:
-      "Created comprehensive parsers using Puppeteer, extracting and structuring data from more than 200 competitor logistics company websites with 98% accuracy.",
-    job6_bullet3:
-      "Implemented complete extraction and systematization of the listex.info database, creating a valuable information resource for the company.",
-    job6_bullet4:
-      "Designed a system for tracking the complete logistics chain of vehicles from auction to final destination, allowing for optimized transport routes and reduced costs.",
+    job6_description: "Development of automation systems for a logistics company (vehicle import from auctions).",
+    job6_stack: "Node.js, Puppeteer, MongoDB, REST API",
+    job6_bullet1: "Developed automated bot system for Copart online auctions (USA and UAE) — real-time data transmission for purchase decisions",
+    job6_bullet2: "Built Puppeteer parsers extracting data from 200+ logistics company websites with 98% accuracy",
+    job6_bullet3: "Designed system for tracking complete vehicle logistics chain",
+
+    job7_title: "FullStack Engineer",
+    job7_date: "March 2019 — January 2020 (11 months)",
+    job7_company: "MK 3",
+    job7_location: "Moscow, mk3.ru",
+    job7_industry: "Construction, real estate, operations, design\n• Commercial property construction (retail spaces, office buildings)\n• Architecture, design",
+    job7_description: "Process automation in a design bureau (construction, architecture, design).",
+    job7_stack: "JavaScript, Node.js, HTML, CSS",
+    job7_bullet1: "Developed the company's corporate website",
+    job7_bullet2: "Created internal CRM system for license management",
+    job7_bullet3: "Built responsive frontend interfaces for internal tools",
 
     // Образование
     education_level: "Higher Education",
@@ -577,7 +559,7 @@ const localization = {
 
     // О себе
     about_me:
-      "My core technology stack includes Node.js, AWS, NestJS, MongoDB/PostgreSQL, and React with TypeScript. I actively use Docker, RabbitMQ, Redis, and WebSockets in my work. I have experience integrating with payment systems (Stripe), writing automated scripts (Jira Automations, Puppeteer), and optimizing backend for high-load services.\n\nFor three years, I worked in an IT team as a developer, and for the last year, I've been managing the production process to gain management experience. This dual perspective allows me to bridge the gap between technical implementation and business needs. I continue to take on private development projects to keep my technical skills sharp.\n\nI always strive for results and take responsibility for the processes I'm involved in. I believe that every team member should be engaged and working toward shared success. I'm convinced that all challenges have solutions—it's just a matter of finding the right approach. I love diving into complex problems and seeing them through to completion.",
+      "Building fullstack products from scratch and shipping to production. I love taking an idea, designing the architecture, building it, and launching — then seeing people use it.\n\n6+ years on Node.js/TypeScript: parsers, web applications, real-time platforms, ETL pipelines, external API integrations.\n\nLive product: tradermap.io — real-time platform with WebSocket integration for 8 exchanges, AI Trading Agent, Grafana/Prometheus monitoring.\n\n2.5 years of international freelancing (Upwork 81% Job Success): fintech, healthcare, crypto — every project from architecture to deployment solo.\n\nCore stack: NestJS, PostgreSQL, MongoDB, Redis, AWS.\nAdditionally: team leadership experience (teams up to 5 people), building BI systems on Metabase.",
   },
 };
 export default localization;
