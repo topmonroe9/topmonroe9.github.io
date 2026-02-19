@@ -76,7 +76,7 @@ const localization = {
     print: "Печать",
 
     // Заголовки секций
-    job_title: "Senior Backend Developer Node.js / TypeScript",
+    job_title: "Senior Backend Engineer & Tech Lead | Node.js, TypeScript",
     job_specs:
       "Специализация: Back End / Full Stack разработка\nФормат работы: полная занятость, удалённая работа, гибрид",
 
@@ -358,7 +358,7 @@ const localization = {
     print: "Print",
 
     // Заголовки секций
-    job_title: "Senior Backend Developer Node.js / TypeScript",
+    job_title: "Senior Backend Engineer & Tech Lead | Node.js, TypeScript",
     job_specs:
       "Specialization: Back End / Full Stack Development\nWork format: Full-time, Remote, Hybrid",
 
